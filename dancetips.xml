@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="DanceCentral.info Dance Tips" />
+<UserPref name="mode" display_name="Mode" default_value="single"/>
+<Content type="html"><![CDATA[
+<head>
+  <base target="_top" />
+  <LINK REL=StyleSheet HREF="http://dancecentral.googlecode.com/svn/trunk/dancetips/dancetips.css" TYPE="text/css"/>
+  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/dancetips/../utils/utils.js"></script>
+  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/dancetips/dancetips.js"></script>
+
+  <script type="text/javascript">
+    //-------------------------------------------
+    // globals
+    var IS_GADGET = true; 
+    var VERSION = "10.1012.1123";
+    var ID_ANALYTICS = "UA-10550268-1";
+    var pageTracker;
+
+    var inputMode = 'single';
+
+    if (IS_GADGET) {
+      inputMode = '__UP_mode__';
+    }
+
+    function onLoad() {     
+      initVars();
+      initDisplay();
+    }
+
+    if (IS_GADGET) {
+      _IG_RegisterOnloadHandler(onLoad);
+    } else {
+      window.onload = onLoad;
+    }
+
+    var danceTips = [];
+  </script>
+  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/dancetips/dancetips_data.js"></script>
+</head>
+
+<body>
+<span id='idOptions'></span>
+<span id='idTipsHeader'></span>
+<span id='idTipsBody'></span>
+<pre id='debugOutput' style='display:none'></pre>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body> 
+
+]]></Content>
+</Module>
+

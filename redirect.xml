@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Redirect" description="Redirect to a different page">
+  </ModulePrefs>
+<UserPref name="url" display_name="URL" required = "true" />
+<UserPref name="redirect" display_name="Redirect" datatype="bool" default_value = "false" />
+<Content type="html">
+<![CDATA[
+<div id=idContent></div>
+<script type="text/javascript">
+  
+if (__UP_redirect__) {
+  top.location = "__UP_url__";
+} else {
+  var html = '<iframe src="__UP_url__" frameborder=0 width=100% height=100% scrolling="auto"/>';
+//    var html = "__UP_url__";
+  var element = _gel("idContent");
+  element.innerHTML = html;
+}
+</script>
+]]>
+</Content>
+</Module>
+
+

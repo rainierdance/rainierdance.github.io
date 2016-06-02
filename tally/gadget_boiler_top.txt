@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Rainier Dance Studio Management - Tally"
+             description="Rainier Dance Studio Management"
+             author="Rainier Dance, LLC"
+             >
+<Require feature="idi"/>
+<Require feature="setprefs" />
+<Require feature="locked-domain" />
+</ModulePrefs>
+<UserPref name="formPostKey" display_name="Form Post Key"
+	  default_value="dG5DVjdwTkxocUFQS042REFvNEZQYmc6MQ" 
+          required="true"/>
+
+<Content type="html"><![CDATA[
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+
+<script>
+
+var gadgetHelper = null;
+_IG_RegisterOnloadHandler(onGadgetLoad);
+
+var prefs = new _IG_Prefs(); // User preferences
+
+function onGadgetLoad() {
+  gFormPostKey = prefs.getString('formPostKey');
+  onLoad();
+}
+
+</script>
+

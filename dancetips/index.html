@@ -1,0 +1,49 @@
+<head>
+  <base target="_top" />
+  <LINK REL=StyleSheet HREF="dancetips.css" TYPE="text/css"/>
+  <script type="text/javascript" SRC="../utils/utils.js"></script>
+  <script type="text/javascript" SRC="dancetips.js"></script>
+
+  <script type="text/javascript">
+    //-------------------------------------------
+    // globals
+    var IS_GADGET = false; 
+    var VERSION = "$Rev$";
+    var ID_ANALYTICS = "UA-10550268-1";
+    var pageTracker;
+
+    var inputMode = 'single';
+
+    if (IS_GADGET) {
+      inputMode = '__UP_mode__';
+    }
+
+    function onLoad() {     
+      initVars();
+      initDisplay();
+    }
+
+    if (IS_GADGET) {
+      _IG_RegisterOnloadHandler(onLoad);
+    } else {
+      window.onload = onLoad;
+    }
+
+    var danceTips = [];
+  </script>
+  <!--DATA-->
+  <script type="text/javascript" src="data/standard.js"></script>
+  <script type="text/javascript" src="data/latin.js"></script>
+</head>
+
+<body>
+<span id='idOptions'></span>
+<span id='idTipsHeader'></span>
+<span id='idTipsBody'></span>
+<pre id='debugOutput' style='display:none'></pre>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body> 
+

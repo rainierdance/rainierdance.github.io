@@ -1,0 +1,451 @@
+<body>
+<style>
+td, body {
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+}
+a:hover {text-decoration: underline; color: red; background: #fafad2;}
+.errMsg {background-color: #ffe6cc; border: 2px solid #c43b1d; padding: 2px;}
+.good {background-color: #ffffff; border: 0px; padding: 0px;}
+</style>
+
+<script>
+var IS_GADGET = false;
+var VERSION = "$Rev$";
+
+////////////////////////////////////////////////////////////////////////
+// Globals
+
+// read from data file, current ongoing classes
+var gAllClasses = [];
+var gAllFilters = {};
+var resultList = null;
+var filterKeys = {
+  'style' : ['Style', 4], // how many per row
+  'level' : ['Level', 5], //there are very few classes after user filter by style
+  'day_of_week' : ['Day', 7],
+  'teacher' : ['Instructor', 6]
+}; 
+var URL_BASE = 'http://dancecentral.googlecode.com/svn/trunk/regclass/';
+var gSelectedClasses = [];
+var dayOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+var presetFilters = {
+  'level' : ['Beginner', 'Level 1', 'Level 2', 'Level 3'],
+//  'teacher' : ['Kora', 'Simeon', 'Jeffrey', 'Violeta', 'Peter'],
+  'day_of_week' : dayOfWeek
+}; 
+
+////////////////////////////////////////////////////////////////////////
+<!-- Utilities -->
+function formatDate(dateObj) {
+  return dateObj.getFullYear() + '-' +
+   ('' + (100 + dateObj.getMonth() + 1)).substring(1) + '-' +
+   ('' + (100 + dateObj.getDate())).substring(1);
+}
+
+function getClassID(classObj) {
+  return classObj['category'] + ' ' +
+    classObj['start_date'] + ' ' +
+    classObj['day_of_week'] + ' ' +
+    classObj['start_time'] + ' ' +
+    classObj['title']; // contains style, dance and level
+
+}
+
+////////////////////////////////////////////////////////////////////////
+// 
+
+function sortClasses(classes) {
+  var sorted = [];
+  var date1, date2;
+  for (var i = 0; i< classes.length; i++) {
+    for (var j=0; j < sorted.length; j++) {
+      var index1 = indexOf(dayOfWeek, classes[i]['day_of_week']);
+      var index2 = indexOf(dayOfWeek, sorted[j]['day_of_week']);
+      if (index1 < index2) break;
+      if (index1 == index2) {
+        if (!classes[i]['start_date'] && !sorted[j]['start_date']) {
+          // both don't have start date, use title
+          // check day of week
+          if (classes[i]['title'] < sorted[j]['title']) break;
+        } else if (classes[i]['start_date'] && sorted[j]['start_date']) {
+          // compare start date first
+          date1 = new Date(classes[i]['start_date']).getTime();
+          date2 = new Date(sorted[j]['start_date']).getTime();
+          if (date1 < date2) break;
+          if (date1 == date2) {
+            if (classes[i]['title'] < sorted[j]['title']) break;
+          }
+        } else {
+         if (classes[i]['start_date']) {
+           break;
+         }
+        }
+      }
+    }
+    sorted.splice(j, 0, classes[i]);
+  }
+  return sorted;
+}
+
+// filter: key: possible values (each key: or)
+function filterClasses(filter) {
+  var classes = [];
+  for (var i = 0; i < gAllClasses.length; i++ ) {
+    var match = true;
+    if (gAllClasses[i]['category'] != 'Series' && gAllClasses[i]['start_date']) {
+      // check if it's a past dropin class
+      var time1 = new Date(gAllClasses[i]['start_date']).getTime();
+      var time2 = new Date().getTime();
+      if (time1 < (time2 - 24 * 60 * 60 * 1000)) { // give  a day
+        match = false;
+      }
+    }
+    if (gAllClasses[i]['category'] == 'Series' && gAllClasses[i]['start_date']) {
+      // check if Series class start in past month, then don't show
+      var date1 = new Date(gAllClasses[i]['start_date']);
+      var month1 = date1.getMonth();
+      var year1 = date1.getYear();
+
+      var today = new Date();
+      var thisMonth = today.getMonth();
+      var thisYear = today.getYear();
+      if (thisYear > year1 || ((thisYear == year1) && (thisMonth > month1)))
+        match = false;
+    }
+    if (match && filter) { // if there is filter check filter
+      for (var key in filter) {
+       //  AND relation, if not a match, break out
+       // check each filter value
+       var values = filter[key];
+       var len = values.length;
+       var found = false;
+       if (len != 0) { // if non is selected, it's match
+         for (var j=0; j < len; j++) { // if found a match, true
+           if (gAllClasses[i][key] == '') {
+             found = true; // any level class match any selected values
+             break;
+           }
+           var class_values = gAllClasses[i][key].split(',');
+           for (var k = 0; k<class_values.length; k++) {
+             var class_value = class_values[k].replace(/^\s+|\s+$/g,"");
+             if (class_value.indexOf(values[j]) != -1) {
+               found = true;
+               break;
+             }
+           }
+           if (found) break;
+         }
+       } else {
+         found = true;
+       }
+       if (!found) {
+         match = false;
+         break;
+       }
+      }
+    }
+    if (match) classes.push(gAllClasses[i]);
+  }
+
+  return sortClasses(classes);
+}
+
+function removeClass(index) {
+  // uncheck in the list
+
+  var fmClass = _gel('fmClass');
+  var options = fmClass['chkClass'];
+  var len = options.length;
+  for (var i=0; i<len; i++) {
+    if (options[i].value == gSelectedClasses[index] && options[i].checked)
+      options[i].checked = false;
+  }
+
+  gSelectedClasses.splice(index, 1);
+
+  freshSelectedClassesDisplay();
+}
+
+function toggleClass(chkClass) {
+  var checked = chkClass.checked;
+  var index = indexOf(gSelectedClasses, chkClass.value);
+  if (index == -1) {
+    gSelectedClasses.push(chkClass.value);
+  } else {
+    gSelectedClasses.splice(index, 1);
+  }
+
+  freshSelectedClassesDisplay();
+}
+
+function freshSelectedClassesDisplay() {
+  // refresh selected classes
+  if (gSelectedClasses.length == 0) {
+    _gel('idSelectedClasses').innerHTML = '';
+  } else {
+    var html = ['<span style="color:rgb(204,0,0)">Selected classes:</span><p><div style="margin-left:5px;">'];
+    var classes = sortClasses(gAllClasses);
+    for (var i = 0; i<classes.length; i++) {
+      var groupClass = classes[i];
+      var index = indexOf(gSelectedClasses, getClassID(groupClass));
+      if (index == -1) continue;
+      // selected
+      html.push(getClassID(groupClass));
+      html.push(' &nbsp; <a style="text-decoration: none" href="javascript:void(0)" onclick="removeClass(' + index + ')">');
+      html.push('x');
+      //html.push('<img valign=middle src="' + URL_BASE + 'remove_icon.png" border=0>');
+      html.push('</a><br>');
+    }
+    html.push('</div>');
+    _gel('idSelectedClasses').innerHTML = html.join('');
+  }
+
+  if (gSelectedClasses.length > 0) {
+    _gel('signUpPanel').style.display = '';
+  } else {
+    _gel('signUpPanel').style.display = 'None';
+  }
+}
+
+function showClasses(filter) {
+  resultList = filterClasses(filter)
+
+  _gel('idFrameSubmit').src = 'about:blank'; // clear from previous
+
+  if (resultList.length == 0) {
+    _gel('idEntityList').innerHTML = 'No matching classes.'
+   return;
+  }
+    
+  var html = ['<b>Check the classes you\'d like to pre-register for:</b><p><form id="fmClass">'];
+  html.push('<table width=100% cellpadding=5 border=1 style="border-collapse:collapse"><tr style="font-weight:bold"><td>Class</td>' +
+     '<td>Time</td><td>Level</td><td>Instructor</td>' +
+     '<td>Category</td>' +
+     '</tr>');
+  for (var i = 0; i < resultList.length; i++) {
+    var groupClass = resultList[i];
+    html.push('<tr width=50%' + ((i % 2 == 0) ? '' : ' style="background:whitesmoke"') + 
+//      '  onclick="toggleClassDetail(' + i + ')" ' + 
+      '>');
+    html.push('<td width=50%>');
+    html.push('<input type=checkbox name="chkClass" value="' + getClassID(groupClass) + '" onclick="toggleClass(this)" ' +
+      (indexOf(gSelectedClasses, getClassID(groupClass)) == -1 ? '' : 'checked') +
+      '> &nbsp;');
+    var link = '<a href="javascript:void(0)" onclick="toggleClassDetail(' +
+      i + ')" ' + ' >';
+    // arrows
+    html.push(link);
+    html.push('<img valign=middle src="' + URL_BASE + 'bullet_arrow_right.png" border=0 id="classImg' + i + '"></a> &nbsp;');
+    html.push(link + resultList[i]['title'] + '</a>');
+   
+    html.push('<div id="class' + i + '" style="margin-top:4px; display:None">' + groupClass['description'] + '</div></td>');
+   
+    html.push('<td>' + (groupClass['category'] == 'Series' ? 'Starting ' : '') + 
+              groupClass['start_date'] + (groupClass['start_date']? '<br>' : ''));
+    html.push(' <b>' +  groupClass['day_of_week'] + '</b> ' + groupClass['start_time'] + '</td>');
+    html.push('<td>' + (groupClass['level'] ?  groupClass['level'] : 'Any')+ '</td>');
+    html.push('<td>');
+    if (groupClass['teacher']) {
+      if (groupClass['bio']) {
+        html.push('<a href="' + groupClass['bio'] + '" target="_blank">' + groupClass['teacher'] + '</a>');
+      } else {
+        html.push(groupClass['teacher']);
+      }
+    }
+    html.push('</td>');
+    //html.push('<td>' + groupClass['category'] + (groupClass['category'] == 'Series' ? ' (4 classes)' : '') + '</td>');
+    html.push('<td>' + groupClass['category'] + '</td>');
+    //html.push('<td>' + groupClass['style'] + '</td>');
+    html.push('</tr>');
+  }
+  html.push('</table></form>');
+  _gel('idEntityList').innerHTML = html.join('');
+}
+
+function toggleClassDetail(index) {
+  var element = _gel("class" + index);
+  if (element.style.display.toLowerCase() == 'none') {
+    element.style.display = '';
+    _gel("classImg" + index).src = URL_BASE + 'bullet_arrow_down.png';
+  }
+  else {
+    element.style.display = 'None';
+    _gel("classImg" + index).src = URL_BASE + 'bullet_arrow_right.png';
+  }
+}
+
+function updateFilter() {
+  // get filters from checkbox
+  var fmFilter = _gel('fmFilter');
+  var filter = {};
+  for (var key in filterKeys) {
+    var filterOptions = fmFilter['filterChk' + key];
+    var len = filterOptions.length;
+    var values = [];
+    for (var i=0; i<len; i++) {
+      if (filterOptions[i].checked) values.push(filterOptions[i].value);
+    }
+    filter[key] = values;
+  }
+
+  showClasses(filter);
+}
+
+function indexOf(obj, value) {
+  if (!obj) return -1;
+  for (var i = 0; i < obj.length; i++) {
+    if (obj[i] == value) { return i; }
+  }
+  return -1;
+}
+
+function showFilters() {
+  // fill in the filters
+  for (var key in filterKeys) {
+   gAllFilters[key] = [];
+  }
+
+  // preset keys
+  for (var key in presetFilters) {
+    gAllFilters[key] = presetFilters[key];
+  }
+
+  for (var i = 0; i < gAllClasses.length; i++) {
+    for (var key in filterKeys) {
+      // additional values may be appended to end of preset filters (don't just take preset filters, e.g. visiting coach)
+      // ',' can be used as delimiter if a class has more than 1 value for the key
+      var values = gAllClasses[i][key].split(',');
+      // trim spaces
+      for (var j = 0; j<values.length; j++) {
+        var value = values[j].replace(/^\s+|\s+$/g,"");
+        if (gAllClasses[i][key] && (indexOf(gAllFilters[key], value) == -1)) {
+          gAllFilters[key].push(value);
+        }
+      }
+    }
+  }
+
+  for (var key in filterKeys) {
+    if (!presetFilters[key])
+      gAllFilters[key].sort();
+  }
+
+  var keyNo = 0;
+  var html = ['<table cellspacing=2 cellpadding=0>'];
+  for (var key in filterKeys) {
+    var len = gAllFilters[key].length;
+    html.push('<tr><td valign=center><span style="color:rgb(204,0,0); font-size:10pt; font-weight:bold">' + filterKeys[key][0] + '&nbsp;&nbsp; </span></td><td>');
+    html.push('<table>');
+    for (var i = 0; i<len; i++) { // 4 options in a row
+      if (i % filterKeys[key][1] == 0) html.push('<tr>');
+      var idLabel = 'key' + keyNo + '_' + i;
+      html.push('<td><input type="checkbox" name="filterChk' + key + 
+        '" onclick="updateFilter()" value="' + gAllFilters[key][i]+ '" id="' + idLabel + '" /><label for="' +
+        idLabel + '">&nbsp;' + gAllFilters[key][i] + "</label> &nbsp; </td>");
+      if (i % 4 == (filterKeys[key][1]-1)) html.push('</tr>');
+    }
+    html.push('</table>');
+    keyNo++;
+    html.push('</td></tr>');
+    html.push('<tr><td colspan=2><hr style="background-color:rgb(204,204,204);border-top-style:none;border-right-style:none;border-bottom-style:none;border-left-style:none;height:1px"></td></tr>');
+  }
+  html.push('</table>');
+   _gel('filterSelection').innerHTML = html.join('');
+
+  showClasses(); // show all clases
+}
+
+function showAllClasses() {
+  // reset
+  _gel('fmFilter').reset();
+
+  // display all classes
+  freshSelectedClassesDisplay();
+
+  showClasses();
+}
+
+// return true to submit the form
+function checkData() {
+  _gel('entry_4').value = gSelectedClasses.join(', ');
+
+  if (!_gel('entry_0').value) { // need name
+   _gel('inputName').className = 'errMsg';
+   return false;
+  }
+   _gel('inputName').className = 'good';
+
+  if (!_gel('group_1_1').checked && !_gel('group_1_2').checked) { // need lead and follow
+   _gel('inputGender').className = 'errMsg';
+   return false;
+  }
+   _gel('inputGender').className = 'good';
+
+  //_gel('entry_7').value = ''; // clean previous note
+  _gel('idEntityList').innerHTML = '';
+  _gel('idSelectedClasses').innerHTML = '';
+  _gel('signUpPanel').style.display = 'None';
+  return true;
+}
+
+</script> 
+
+<!--- UI elements --->
+
+<!-- Search header, always shown -->
+<div style="float:normal">
+Narrow down your choices by checking the boxes. &nbsp; &nbsp; &nbsp; 
+<a href="javascript:void(0)" onclick="showAllClasses()">Show all classes</a></div>
+<br style="line-height:1.8">
+<form id="fmFilter">
+<div id='filterSelection'></div>
+</form>
+
+<table cellspacing=10 id='idSearchResult' width=100%>
+<tr><td valign=top nowrap width=50%>
+<div id="idSelectedClasses"></div><p>
+</td>
+
+<td valign=top>
+<div id='signUpPanel' style="display:None; border: 1px solid #cc0000; padding: 5px;">
+<form target="frmSubmit" 
+  action="https://docs.google.com/a/ariaballroom.com/spreadsheet/formResponse?formkey=dDBrVDhLRGdlQ0ZiSndDaXAyMldzY2c6MQ&amp;ifq" 
+  method="POST" id="ss-form" onSubmit="return checkData()">
+<span id="inputName">
+<input type="hidden" name="entry.4.single" value="" class="ss-q-short" id="entry_4"> 
+Your name: <input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" size=20> &nbsp;</span> 
+<span id="inputGender">
+<input type="radio" name="entry.1.group" value="Lead" class="ss-q-radio" id="group_1_1"><label for="group_1_1">Lead</label> &nbsp; 
+<input type="radio" name="entry.1.group" value="Follow" class="ss-q-radio" id="group_1_2"><label for="group_1_2">Follow</label></span><p>
+Email: <input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2" size=32>
+
+<!--
+In case of class changes, how can we reach you? (Optional)<br>
+Phone: <input type="text" name="entry.6.single" value="" class="ss-q-short" id="entry_6" size=15><p>
+Question? Commments? Leave us a note:<br>
+<textarea name="entry.7.single" rows="3" cols="50" class="ss-q-long" id="entry_7"></textarea>
+<br>
+-->
+<input type="hidden" name="pageNumber" value="0">
+<input type="hidden" name="backupCache" value="">
+<input type="submit" name="submit" value="Sign up!">
+</form>
+</div>
+
+</div>
+</td>
+</tr>
+</table>
+
+<!-- Search result list + each participant details -->
+<div id="idEntityList" style="overflow: auto;line-height:1.3"><img src="http://www.google.com/ig/images/spinner.gif" /></div>
+
+<!-- Visible to make sure form post is successful -->
+<div>
+<iframe name="frmSubmit" id='idFrameSubmit' width=500 height=200 frameborder=0 scrolling=no></iframe>
+</div>
+<script type="text/javascript" SRC="localonly.js"></script>
+
+</body>

@@ -1,0 +1,190 @@
+<!--
+/***********************************************
+  Copyright 2012 Rainier Dance, LLC.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+**************************************************/
+-->
+<body onLoad='onLoad()'>
+<style>
+td, body {
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+}
+a:hover {text-decoration: underline; color: red; background: #fafad2;}
+.errMsg {background-color: #ffffcc; border: 0px solid #c43b1d; font-weight:bold; color:red}
+</style>
+
+<script>
+var IS_GADGET = false;
+var VERSION = "$Rev$";
+var gFormPostKey = "dG5DVjdwTkxocUFQS042REFvNEZQYmc6MQ";
+
+function onLoad() {
+  // initial setup
+  _gel("ss-form").action = 'https://docs.google.com/a/ariaballroom.com/spreadsheet/formResponse?hl=en_US&formkey=' + gFormPostKey + '&ifq';
+
+  // fill in default date
+  var now = new Date();
+  var dateStr = 
+    ('' + (100 + now.getMonth() + 1)).substring(1) + '/' +
+    ('' + (100 + now.getDate())).substring(1) + '/' +
+    now.getFullYear();
+  _gel('entry_0').value = dateStr;
+
+  updateTotal();
+
+  showCopyright();
+}
+
+// $ value for each input field
+var ENTRIES= [
+  ['entry_2', 100.0],
+  ['entry_3', 50.0],
+  ['entry_4', 20.0],
+  ['entry_5', 10.0],
+  ['entry_6', 5.0],
+  ['entry_7', 1.0],
+  ['entry_8', 0.25],
+  ['entry_9', 0.10],
+  ['entry_10', 0.05],
+  ['entry_11', 0.01]
+  ];
+
+// update Grand Total value
+function updateTotal() {
+  var total = 0.0;
+
+  //checks
+  var input = parseFloat(_gel('entry_1').value);
+  if (!isNaN(input)) total += input;
+
+  for (var i=0; i<ENTRIES.length; i++) {
+    var num =  parseInt(_gel(ENTRIES[i][0]).value);
+    if (!isNaN(num)) total += ENTRIES[i][1] * num;
+  }
+
+  _gel('idTotal').innerHTML = '$' + total;
+  return total;
+}
+
+function checkInput() {
+  _gel('entry_13').value = updateTotal();
+ 
+  // check minimum input fields
+  if (_gel('entry_0').value == "") {
+    _gel('errMsg').innerHTML = 'ERROR: Please make sure to enter the date.';
+    return false;
+  }  else if (_gel('entry_12').value == "") {
+    _gel('errMsg').innerHTML = 'ERROR: Please enter Staff name that did the tally';
+    return false;
+  }
+  return true;
+}
+
+</script>
+
+<div id="idCopyright"></div>
+
+<div style="font-size:14pt;font-weight:bold;margin-top:10px;"> Grand Total: 
+<span style="padding:2px;background:#ffffcc;border:1px solid #c43b1d; color:green" id="idTotal"> $0</span>
+</div><p>
+
+<span class="errMsg" id='errMsg'></span>
+
+<div style='line-height:2'>
+
+<form method="POST" id="ss-form" onSubmit="return checkInput();">
+<label  for="entry_0"><b>Date *</b>
+</label>
+<label  for="entry_0"></label>
+<input type="text" name="entry.0.single" value=""  id="entry_0" size=12>
+<br> 
+<label  for="entry_12"><b>Staff Name *</b>
+</label>
+<input type="text" name="entry.12.single" value="" class="ss-q-short" id="entry_12" size=24>
+<label  for="entry_12"><i>Who did the tally?</i></label>
+
+<input type="hidden" name="entry.13.single" value="" class="ss-q-short" id="entry_13">
+
+<br>
+<input type="hidden" name="pageNumber" value="0">
+<input type="hidden" name="backupCache" value="">
+
+
+
+<label  for="entry_1">Checks Total
+</label>
+<label  for="entry_1"></label>
+<input type="text" name="entry.1.single" value=""  id="entry_1" size=8 onChange="updateTotal();">
+<br> 
+<label  for="entry_2"># of $100's:  </label>
+<label  for="entry_2"></label> <input type="text" name="entry.2.single" value=""  id="entry_2" size=4 onChange="updateTotal();">
+&nbsp; &nbsp; &nbsp;
+<label  for="entry_3"># of $50's: </label>
+<label  for="entry_3"></label>
+<input type="text" name="entry.3.single" value=""  id="entry_3" size=4 onChange="updateTotal();">
+&nbsp; &nbsp; &nbsp;
+<label  for="entry_4"># of $20's: 
+</label>
+<label  for="entry_4"></label>
+<input type="text" name="entry.4.single" value=""  id="entry_4" size=4 onChange="updateTotal();">
+<br> 
+<label  for="entry_5"># of $10's: 
+</label>
+<label  for="entry_5"></label>
+<input type="text" name="entry.5.single" value=""  id="entry_5"  size=4 onChange="updateTotal();">
+&nbsp; &nbsp; &nbsp;&nbsp;
+<label  for="entry_6"># of $5's: 
+</label>
+<label  for="entry_6"></label>
+<input type="text" name="entry.6.single" value=""  id="entry_6"  size=4 onChange="updateTotal();">
+&nbsp; &nbsp; &nbsp;&nbsp;
+<label  for="entry_7"># of $1's: 
+</label>
+<label  for="entry_7"></label>
+<input type="text" name="entry.7.single" value=""  id="entry_7" size=4 onChange="updateTotal();">
+<br> 
+<label  for="entry_8"># of quarters ($0.25)
+</label>
+<label  for="entry_8"></label>
+<input type="text" name="entry.8.single" value="40"  id="entry_8" size=4 onChange="updateTotal();">
+&nbsp; &nbsp; &nbsp;
+<label  for="entry_9"># of dimes ($0.10)
+</label>
+<label  for="entry_9"></label>
+<input type="text" name="entry.9.single" value="50"  id="entry_9" size=4 onChange="updateTotal();">
+<br>
+<label  for="entry_10"># of nickels ($0.05)
+</label>
+<label  for="entry_10"></label>
+<input type="text" name="entry.10.single" value="40"  id="entry_10" size=4 onChange="updateTotal();">
+&nbsp; &nbsp; &nbsp; &nbsp;
+<label  for="entry_11"># of pennies ($0.01)
+</label>
+<label  for="entry_11"></label>
+<input type="text" name="entry.11.single" value="100"  id="entry_11" size=4 onChange="updateTotal();">
+<br> 
+<label class="ss-q-title" for="entry_14"><b>Note</b></label> <br>
+<label class="ss-q-help" for="entry_14"></label>
+<textarea name="entry.14.single" rows="8" cols="75" class="ss-q-long" id="entry_14"></textarea>
+<br>
+
+<input type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+<script type="text/javascript" SRC="localonly.js"></script>
+<script type="text/javascript" SRC="../utils/license.js"></script>
+
+</body>

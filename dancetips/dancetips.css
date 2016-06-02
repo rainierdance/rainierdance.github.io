@@ -1,0 +1,31 @@
+body {
+  font-family: Georgia, serif;
+  font-size: 0.8em;
+}
+
+td {
+  font-size: 0.8em;
+}
+
+.selectedLabel {
+  background-color: #fff4c2;
+  padding: 1px 5px 1px 5px;
+}
+
+.nonSelectedLabel {
+  background-color: #deefe0;
+  padding: 1px 5px 1px 5px;
+  #text-decoration: line-through; 
+}
+
+.tipLabel {
+  color: gray;
+}
+
+.tipCount {
+  font-size: 0.7em;
+}
+
+.labelSection {
+  margin-left: 20px;
+}

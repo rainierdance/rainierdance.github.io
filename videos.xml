@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="DanceCentral.info Video Clips" />
+<UserPref name="query" display_name="Query" default_value=""/>
+<Content type="html"><![CDATA[
+<head>
+  <base target="_top" />
+  <LINK REL=StyleSheet HREF="http://dancecentral.googlecode.com/svn/trunk/videos/dci_video.css" TYPE="text/css"/>
+  <LINK REL=StyleSheet HREF="http://dancecentral.googlecode.com/svn/trunk/videos/../figures/figures.css" TYPE="text/css"/>
+
+  <script type="text/javascript">
+    //-------------------------------------------
+    // globals
+    var IS_GADGET = true; 
+    var VERSION = "11.1003.1601";
+    var ID_ANALYTICS = "UA-10550268-1";
+    var pageTracker;
+
+    var inputQuery = '';
+
+    if (IS_GADGET) {
+      // does gadget specific initialization
+      inputQuery= '__UP_query__';
+    }
+
+    var danceVideos = [];
+
+    function onLoad() {
+      if (!IS_GADGET) {
+        var paramValue = getURLParam('query');
+        if (paramValue) inputQuery = paramValue;
+
+        // show debug output
+        document.getElementById('debugOutput').style.display = 'block';
+      }
+
+      document.getElementById('query').value = inputQuery;
+ 
+      initVideos();
+      updateVideoResult();
+
+      document.getElementById('divVersion').innerHTML = VERSION;
+    }
+  </script>
+  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/videos/dci_video.js"></script>
+  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/videos/../utils/utils.js"></script>
+  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/videos/videos_data.js"></script>
+
+</head>
+
+<body onLoad="onLoad()">
+
+<form id ='idSearchForm' onsubmit="updateVideoResult(true); getElementById('query').select(); return false;">
+<input type=text id='query' value='' size=40 onFocus='this.select();'>
+<input type=button value="Search Video Clips!" onclick='updateVideoResult(true);'>
+</form>
+
+<table>
+<tr><td>
+<div id='divList'></div>
+</td><td>
+<div id='divPlayer'></div>
+</td></tr>
+</table>
+
+<pre id='debugOutput' style='display:none'></pre>
+<div id='divVersion'></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body> 
+
+]]></Content>
+</Module>
+

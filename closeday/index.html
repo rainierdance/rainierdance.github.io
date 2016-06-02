@@ -1,0 +1,188 @@
+<!--
+/***********************************************
+  Copyright 2012 Rainier Dance, LLC.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+**************************************************/
+-->
+
+<body onLoad='onLoad()'>
+<style>
+td, body {
+  font-family: Arial, sans-serif;
+  font-size: 0.8em;
+}
+a:hover {text-decoration: underline; color: red; background: #fafad2;}
+.errMsg {background-color: #ffffcffffcc; border: 0px solid #c43b1d; font-weight: bold; color:red;}
+.verifyMsg {background-color: #ffffcc; border: 2px solid #ffcc99; padding: 2px; margin-left:10px; width:600px; font-weight:bold; }
+</style>
+
+<script>
+var IS_GADGET = false;
+var VERSION = "$Rev$";
+var gFormPostKey = "dFBIQVZyVE1OUUFaNXhIRGZjZXcyWGc6MQ";
+
+function onLoad() {
+  // fill in default date
+  var now = new Date();
+  var dateStr = 
+   ('' + (100 + now.getMonth() + 1)).substring(1) + '/' +
+   ('' + (100 + now.getDate())).substring(1) + '/' +
+   now.getFullYear();
+
+  // initial setup
+  _gel("ss-form").action = 'https://docs.google.com/a/ariaballroom.com/spreadsheet/formResponse?hl=en_US&formkey=' + gFormPostKey + '&ifq';
+
+  _gel('entry_0').value = dateStr;
+
+  showCopyright();
+}
+
+// trim left and right space
+function trimLR(input) {
+  if (!input) {
+    return '';
+  }
+  return input.replace(/^\s+|\s+$/g,"");
+}
+
+function checkFields() {
+  var staff = _gel('entry_12');
+  if (_gel('entry_0').value == "") { // date
+    _gel('errMsg').innerHTML = 'ERROR: Please make sure to enter the date.';
+    return false;
+  }  else if (_gel('entry_8').value == "") { // staff
+    _gel('errMsg').innerHTML = 'ERROR: Please enter Aria Staff name closing the day.';
+    return false;
+  } else {
+    _gel('errMsg').innerHTML = '';
+  }
+  return true;
+}
+
+function getNumber(ele) {
+  if (!ele || ele.value.length == 0) return 0.0;
+  else return parseFloat(ele.value);
+}
+
+function verify() {
+ var startBalance = getNumber(_gel('entry_1'));
+ var totalDaily = getNumber(_gel('entry_2'));
+ var totalCreditCard = getNumber(_gel('entry_3'));
+ var totalOnline = getNumber(_gel('entry_4'));
+ var totalDeposit = getNumber(_gel('entry_5'));
+ var miscIncome = getNumber(_gel('entry_13'));
+ var endBalance = getNumber(_gel('entry_6'));
+ var totalSalesInApp = getNumber(_gel('entry_7'));
+
+ var calculatedEndingBalance = startBalance + totalDaily - totalCreditCard - totalOnline - totalDeposit;
+
+  _gel('entry_9').value = calculatedEndingBalance;
+  _gel('entry_10').value = (endBalance == calculatedEndingBalance ? 'YES' : 'NO');
+  _gel('entry_11').value = (totalDaily == (totalSalesInApp + miscIncome) ? 'YES' : 'NO');
+
+  _gel('idCalBalance').innerHTML = '$' + calculatedEndingBalance;
+  _gel('idCalBalanceMatch').innerHTML = _gel('entry_10').value;
+  _gel('idAppMatch').innerHTML = _gel('entry_11').value;
+}
+
+function checkInput() {
+  verify();
+ 
+  return checkFields();
+}
+
+</script>
+
+<div id="idCopyright"></div>
+
+<div style="font-size:12pt;font-weight:bold"> Does everything look good? <span style="color:green" id="idResult"></span></div><p>
+
+<span class="errMsg" id='errMsg'></span>
+
+<div style='line-height:2'>
+
+
+<form method="POST" id="ss-form" onSubmit="return checkInput();">
+
+<div class="errorbox-good">
+<div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">Date
+<span class="ss-required-asterisk">*</span></label>
+<label class="ss-q-help" for="entry_0"></label>
+<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0">
+<br> <div class="errorbox-good">
+<label class="ss-q-title" for="entry_8"><b>Aria Staff</b>: </label>
+<input type="text" name="entry.8.single" value="" class="ss-q-short" id="entry_8" size=32> 
+<label class="ss-q-help" for="entry_8"> &nbsp;<i>I am closing the day. I can count money. :)</i></label>
+
+<br>
+<input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1">
+<label class="ss-q-title" for="entry_1">Cash Register <b>Actual Starting Balance</b>
+<span class="ss-required-asterisk"></span></label>
+ (including checks and cash).
+<br> <div class="errorbox-good">
+<input type="text" name="entry.6.single" value="" class="ss-q-short" id="entry_6">
+<label class="ss-q-title" for="entry_6">Cash Register <b>Actual Ending Balance</b> </label>
+<br> <div class="errorbox-good">
+<input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2">
+<label class="ss-q-title" for="entry_2"> <span style="font-weight:bold">QBO Daily Income Total</span>
+<span class="ss-required-asterisk"></span></label>
+ (From QBO: Customers -&gt; Income List.)
+<br> <div class="errorbox-good">
+<input type="text" name="entry.3.single" value="" class="ss-q-short" id="entry_3">
+<label class="ss-q-title" for="entry_3">Merchant Center <b>Credit Card Daily Total</b> </label>
+(From Merchant Center: Activities and Reports -&gt;     Transactions.)
+<br> <div class="errorbox-good">
+<input type="text" name="entry.4.single" value="" class="ss-q-short" id="entry_4">
+<label class="ss-q-title" for="entry_4">Online Sales Total </label>
+(From Google Checkout. Purchase orders are in frontdesk@ email.)
+<br> <div class="errorbox-good">
+<input type="text" name="entry.5.single" value="" class="ss-q-short" id="entry_5">
+<label class="ss-q-title" for="entry_5">Bank Deposit </label>
+ (If any checks and cash are taken to bank for deposit.)
+<br>
+<input type="text" name="entry.13.single" value="" class="ss-q-short" id="entry_13">
+Misc cash income (not recorded in studio app, e.g. coffee/water fund)
+<br> <div class="errorbox-good">
+<input type="text" name="entry.7.single" value="" class="ss-q-short" id="entry_7">
+<label class="ss-q-title" for="entry_7"> <b>Studio App Student Sales Total</b> (Studio App: Statistics - Current, enter date range, Payment Stats.) <span class="ss-required-asterisk"></span></label>
+<br>
+
+<input type="button" onclick="verify()"  value="Verify, but do not submit"> &nbsp; &nbsp;  (The yellow box will be filled after clicking the button.)
+<div class="verifyMsg">
+<b>Calculated cash ending balance: <span id='idCalBalance'></span></b>
+<br>
+<b>Calculated cash ending balance matches actual balance? <span id='idCalBalanceMatch'></span></b>
+<br>
+<b>Studio app Student Sales matches QBO sales for the day? <span id='idAppMatch'></span></b>
+</div>
+<label class="ss-q-title" for="entry_12">Note (any special circumstances) </label><br>
+<label class="ss-q-help" for="entry_12"></label>
+<textarea name="entry.12.single" rows="8" cols="75" class="ss-q-long" id="entry_12"></textarea>
+<br>
+<input type="hidden" name="entry.9.single" value="" class="ss-q-short" id="entry_9"> <!-- calculated cash total -->
+<input type="hidden" name="entry.10.single" value="" class="ss-q-short" id="entry_10"> <!-- cash actual matches calculated -->
+<input type="hidden" name="entry.11.single" value="" class="ss-q-short" id="entry_11"> <!-- Studio app matches QBO sales -->
+<input type="hidden" name="pageNumber" value="0">
+<input type="hidden" name="backupCache" value="">
+
+
+<div class="ss-item ss-navigate"><div class="ss-form-entry">
+<input type="submit" name="submit" value="Ready. Submit Now!"></div></div></form>
+</div>
+
+<script type="text/javascript" SRC="localonly.js"></script>
+<script type="text/javascript" SRC="../utils/license.js"></script>
+
+
+</body>

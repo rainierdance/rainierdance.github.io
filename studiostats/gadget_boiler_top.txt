@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="Rainier Dance Studio Management - Stats"
+             description="Rainier Dance Studio Management"
+             author="Rainier Dance, LLC."
+             >
+<Require feature="idi"/>
+<Require feature="setprefs" />
+<Require feature="locked-domain" />
+</ModulePrefs>
+<UserPref name="dataUrl" display_name="Data url"
+          required="true"/>
+<UserPref name="data1Url" display_name="Data 1 url"
+          required="false"/>
+<UserPref name="data2Url" display_name="Data 2 url"
+          required="false"/>
+<UserPref name="options" display_name="Display Options"
+          default_value="0"
+          required="false"/>
+<Content type="html"><![CDATA[
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+<script>
+function escapeHtml(text) {
+  if (text == null) {
+    return '';
+  }
+  //return _hesc(text);
+  return text;
+}
+
+/**
+ * Load the APIs and run sendStudentQuery when the load is complete
+ */
+var gadgetHelper = null;
+var dataUrls = [];
+var dataIndex = 0;
+
+_IG_RegisterOnloadHandler(loadVisualizationAPI);
+function loadVisualizationAPI() {
+  google.load("visualization", "1");
+
+  var dataurl = prefs.getString('dataUrl');
+  dataUrls.push(dataurl);
+
+  dataurl = prefs.getString('data1Url');
+  if (dataurl && (dataurl.length > 0)) 
+    dataUrls.push(dataurl);
+
+  dataurl = prefs.getString('data2Url');
+  if (dataurl && (dataurl.length > 0)) 
+    dataUrls.push(dataurl);
+
+  gOptions = prefs.getString('options');
+
+  google.setOnLoadCallback(sendDataQuery);
+}
+
+/**
+ * Create a query (shaped by the Gadget's user preferences), then
+ * send it to the spreadsheet data source. Also give the name of a
+ * function ("handleQueryResponse") to run once the spreadsheet data
+ * is retrieved:
+ */
+var prefs = new _IG_Prefs(); // User preferences
+
+// new form data
+function sendDataQuery() {
+  prefs.set('_table_query_url', dataUrls[dataIndex++]);
+  gadgetHelper = new google.visualization.GadgetHelper();
+  var query = gadgetHelper.createQueryFromPrefs(prefs);
+  query.send(handleDataQueryResponse);
+}
+
+function handleDataQueryResponse(response) {
+  if (!gadgetHelper.validateResponse(response)) {
+    return;     // Default error handling was done, just leave.
+  }
+  var data = response.getDataTable();
+  for (var row = 0; row < data.getNumberOfRows(); row++) {
+    var cols = [];
+    for (var col = 0; col < data.getNumberOfColumns(); col++) {
+      cols.push(data.getFormattedValue(row,col).replace(/^\s+|\s+$/g,""));
+    }
+    addRawEntry(cols);
+  }
+
+  if (dataIndex >= dataUrls.length)
+    initData();
+  else // get more data
+    sendDataQuery();
+}
+</script>
+
