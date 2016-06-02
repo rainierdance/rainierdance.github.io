@@ -5,8 +5,8 @@
 <Content type="html"><![CDATA[
 <head>
   <base target="_top" />
-  <LINK REL=StyleSheet HREF="http://dancecentral.googlecode.com/svn/trunk/videos/dci_video.css" TYPE="text/css"/>
-  <LINK REL=StyleSheet HREF="http://dancecentral.googlecode.com/svn/trunk/videos/../figures/figures.css" TYPE="text/css"/>
+  <LINK REL=StyleSheet HREF="http://code.dancecentral.info/videos/dci_video.css" TYPE="text/css"/>
+  <LINK REL=StyleSheet HREF="http://code.dancecentral.info/videos/../figures/figures.css" TYPE="text/css"/>
 
   <script type="text/javascript">
     //-------------------------------------------
@@ -42,9 +42,9 @@
       document.getElementById('divVersion').innerHTML = VERSION;
     }
   </script>
-  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/videos/dci_video.js"></script>
-  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/videos/../utils/utils.js"></script>
-  <script type="text/javascript" SRC="http://dancecentral.googlecode.com/svn/trunk/videos/videos_data.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/videos/dci_video.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/videos/../utils/utils.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/videos/videos_data.js"></script>
 
 </head>
 
