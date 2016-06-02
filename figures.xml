@@ -8,8 +8,8 @@
 <Content type="html"><![CDATA[
 <head>
   <base target="_top" />
-  <LINK REL=StyleSheet HREF="https://dancecentral.googlecode.com/svn/trunk/figures/figures.css" TYPE="text/css"/>
-  <LINK REL=StyleSheet HREF="https://dancecentral.googlecode.com/svn/trunk/figures/../videos/dci_video.css" TYPE="text/css"/>
+  <LINK REL=StyleSheet HREF="http://code.dancecentral.info/figures/figures.css" TYPE="text/css"/>
+  <LINK REL=StyleSheet HREF="http://code.dancecentral.info/figures/../videos/dci_video.css" TYPE="text/css"/>
 
   <script type="text/javascript">
     //-------------------------------------------
@@ -45,11 +45,11 @@
     }
   </script>
 
-  <script type="text/javascript" SRC="https://dancecentral.googlecode.com/svn/trunk/figures/../utils/utils.js"></script>
-  <script type="text/javascript" SRC="https://dancecentral.googlecode.com/svn/trunk/figures/connecting_figures.js"></script>
-  <script type="text/javascript" SRC="https://dancecentral.googlecode.com/svn/trunk/figures/../videos/dci_video.js"></script>
-  <script type="text/javascript" SRC="https://dancecentral.googlecode.com/svn/trunk/figures/../videos/videos_data.js"></script>
-  <script type="text/javascript" SRC="https://dancecentral.googlecode.com/svn/trunk/figures/figures_data.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/figures/../utils/utils.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/figures/connecting_figures.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/figures/../videos/dci_video.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/figures/../videos/videos_data.js"></script>
+  <script type="text/javascript" SRC="http://code.dancecentral.info/figures/figures_data.js"></script>
 
 
 
