@@ -38,6 +38,7 @@ function clearSelection() {
 }
 
 function showVideo(index, flagTrack) {  // index to "videos"
+
   if (currentIndex == index)
       return; // reduce flicker
 
@@ -118,6 +119,11 @@ function getSearchResult() {
 function updateVideoResult(flagTrack) {
   clearSelection();
 
+/*** 1/22/2018 embedding youtube video causes shockwave errors on 
+ some devices and browers, user see virus alert. Remove this feature for now.
+*/
+
+/*
   var query = document.getElementById('query').value;
   if (flagTrack) {
     track('/gadgets/videos/search?q=' + encodeURIComponent(query));
@@ -151,4 +157,6 @@ function updateVideoResult(flagTrack) {
   element.innerHTML = output.join('');
 
   showVideo(0);
+*/
+
 }
