@@ -45,20 +45,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/mfWhd3CpYD4'
   },
   {
-    'title' : 'Standard Technique by Stephen & Jennifer Hillier',
-    'description' : 'Demonstration by the couple. Detailed explanation on:<ul> ' +
-      '<li>  Use of the knee: compress the knee forward to provide the initial movement of the body. ' +
-      '<li>  To provide power action, keep heel of supporting foot on floor as long as possible. Releasing early unbalances body, looks weak. ' +
-      "<li>  The moving leg/foot: lifting knee, delay moving foot, eventually foot will catch the body, it doesn't arrive before body." +
-      '<li>  Use proper footwork: e.g. HT, T, TH (Waltz). ' +
-      '<li>  2nd step: Swing action: coming through the hip; before placing foot, swing the hip. ' +
-      '<li>  3rd step: using inside muscle to close feet. ' +
-      '<li>  Lowering is every important at end of 3rd step. ' +
-      '</ul>',
-    'labels' : ['SlowWaltz'],
-    'url' : 'http://www.youtube.com/v/vXbAlRnMGIA'
-  },
-  {
     'title' : 'Waltz Silver Practice Routine',
     'description' : 'Andy & Wendy Wong from The Grand Ballroom. Routine: <ul> ' +
       '<li>  Natural Turn ' +
@@ -163,15 +149,6 @@ danceVideos = danceVideos.concat([
     'description' : 'Instruction by Marcus & Karen Hilton',
     'labels' : ['SlowWaltz', 'OpenTelemark'],
     'url' : 'http://www.youtube.com/v/HeJMUCO8_wg'
-  },
-  {
-    'title' : 'Standard Technique for Ladies by Heather Smith - Vol 2',
-    'description' : 'Header explaiins how to do a proper Open Impetus to Promenade Position:<ul><li>  When Man moves backwards, Lady is driving movement. ' +
-        '<li>  Movement smoothness and fluidity: when moving forward, flex and allow hip joint to move with moving leg <b>across</b> the floor. Do not sit legs and hip on the standing foot. ' +
-        '<li>  Finishing: turning feet, think about leaving upper body still. ' +
-        '</ul>',
-    'labels' : ['SlowWaltz', 'OpenImpetus'],
-    'url' : 'http://www.youtube.com/v/DcWDacTs7O4'
   },
   {
     'title' : 'Waltz Weave from Promenade Position, Chasse From PP',

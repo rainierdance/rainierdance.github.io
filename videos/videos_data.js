@@ -25,38 +25,10 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/kW-ffl7i5-c'
   },
   {
-    'title' : 'Standard Technique for Ladies by Heather Smith - Vol 1',
-    'description' : 'Heather talks about center balance and stretch:<ul><li> Find center and diagnoal stretch using a chair: stretch center back to the spine; stretch left side and arm diagonally leftwards. ' +
-        '<li> line up 4 building blocks: head, shoulder, body, hips when stretching to side, both sides stretching evenly, do not break opposite side.</ul>',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/cAjqm8pyHZY'
-  },
-  {
     'title' : 'Latin Styling Demonstration - Portland Dancesport',
     'description' : 'Demonstrated using Cha Cha. 5 points on leg action, body rhythm, arm styling, ronde, swivels.',
     'labels' : [],
     'url' : 'http://www.youtube.com/v/w98G0tPWTPQ'
-  },
-  {
-    'title' : 'Latin Styling - Arm styling in Cha Cha by Jaana Knunitz',
-    'description' : 'Includes different timing',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/MKWHgdHoqu8'
-  },
-  {
-    'title' : 'Latin Styling - Twisting, Arms in Rumba, by Jaana Knunitz',
-    'description' : 'Jaana describes: <ul> ' +
-      '<li> Twisting: top stays in place, collect, passing feet, straighten, rotate the the bottom, take the step.' +
-      '<li>  Arms: arms to side, create a window and back down to waist.' +
-      '</ul>',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/3LQQL7_njnI'
-  },
-  {
-    'title' : 'Latin Technique: Core Isolations by Jaana Knunitz',
-    'description' : 'Ankle and toe isolations; Latin points. (Start from 2:07)',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/pM0Lk4NuMlA'
   }
 ]);
 
@@ -202,18 +174,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/UTJqg3wrNYs'
   },
   {
-    'title' : 'Cha Cha Pratice: body roll break down',
-    'description' : 'Demonstrated by Yulia.',
-    'labels' : ['ChaCha'],
-    'url' : 'http://www.youtube.com/v/k_m0UtSpcRU'
-  },
-  {
-    'title' : 'Cha Cha Pratice: ronde chasse, lock steps, body roll',
-    'description' : 'Demonstrated by Yulia.',
-    'labels' : ['ChaCha'],
-    'url' : 'http://www.youtube.com/v/ItJgJiWV8xE'
-  },
-  {
     'title' : 'Cha Cha Technique: Connection with Floor',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['ChaCha'],
@@ -262,12 +222,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/eImhD8_tzBM'
   },
   {
-    'title' : 'Cha Cha New York - Variation',
-    'description' : "New Yorker with Lady's turn. Demonstrated by Max Kozhevnikov & Yulia Zagoruychenko.",
-    'labels' : ['NewYorkLSP', 'NewYorkRSP', 'ChaCha'],
-    'url' : 'http://www.youtube.com/v/INzaQGhMEgY'
-  },
-  {
     'title' : 'Cha Cha Practice Routine - Bronze Level',
     'description' : 'Some basic bronze figures. TaiWan. Routine: <ul> ' +
       '<li>  Closed Basic ' +
@@ -298,76 +252,6 @@ danceVideos = danceVideos.concat([
       '</ul>',
     'labels' : ['ShoulderToShoulder', 'ChaCha'],
     'url' : 'http://www.youtube.com/v/RMjgnIMCu5A'
-  },
-  {
-    'title' : 'Cha Cha: Warm Up',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/lAfPdFerjXs'
-  },
-  {
-    'title' : 'Cha Cha demonstration: Tony & Elena',
-    'description' : 'Narrated by Len Goodman.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/3RDNkR7M1wA'
-  },
-  {
-    'title' : 'Cha Cha Technique: Rotation',
-    'description' : '(non-English)  Demonstrate Cha Cha Basic',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/Zchkhm36MUg'
-  },
-  {
-    'title' : 'Cha Cha Technique: 10 types of chasses',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas. <ol> ' +
-      '<li> Compact Chasse ' +
-      '<li> Forward Lock Chasse ' +
-      '<li> Back Lock Chasse ' +
-      '<li> LRL Chasse ' +
-      '<li> RLF Chasse ' +
-      '<li> Slip Chasse ' +
-      '<li> Hip Twist Chasse ' +
-      '<li> Ronde Chasse ' +
-      '<li> Progressive Chasse ' +
-      '<li> Runaway Chasse (Man does Hip Twist Chasse) ' +
-      '</ol>',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/cOJIsIF7JDc'
-  },
-  {
-    'title' : 'Latin Technique: 4 types of hip actions',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas. 4 types of hip actions. <br><ol> ' +
-      '<li> Settling: settle over straight leg, changing weight, pushing/settling down to the floor, ribcage squeezing with hip. Powerful. '  +
-      '<li> Lateral: not as deep as settling, hips move left to right, lighter in weight, travel across, gently.'  +
-      '<li> Rotating: rotate around spiral column, ribcage is moving with hips.'  +
-      '<li> Twisting: Man settling, Lady twisting.'  +
-      '</ol>',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/oEy4G1NDRDI'
-  },
-  {
-    'title' : 'Cha Cha Closed Basic in open position, Guapacha timing',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/5ipRsFwvONk'
-  },
-  {
-    'title' : 'Cha Cha Technique: Three Cha Cha Chas (Lock Step): no hold, double hand hold, alternating hands',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas. Including an options where Lady does Runaway Chasse.',
-    'labels' : ['ThreeChaChaChas', 'ChaCha'],
-    'url' : 'http://www.youtube.com/v/hUNbbCL9xBI'
-  },
-  {
-    'title' : 'Cha Cha Basic, RLF Chasse, LRL Chasse, Checked Action',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/Wsf9p2e-d18'
-  },
-  {
-    'title' : 'Cha Cha Closed Basic',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : ['ClosedBasic', 'ChaCha'],
-    'url' : 'http://www.youtube.com/v/uOroZ47kj7U'
   }
 ]);
 
@@ -454,12 +338,6 @@ danceVideos = danceVideos.concat([
         '</ul>',
     'labels' : [],
     'url' : 'http://www.youtube.com/v/94JbmwxOy_0'
-  },
-  {
-    'title' : 'Foxtrot Demonstration by Victor Fung and Anna Mikhed',
-    'description' : 'Reverse Turn, Weave, Feather...',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/ALXgC9lcvl0'
   }
 ]);
 
@@ -513,12 +391,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/EbJxpquVo7g'
   },
   {
-    'title' : 'Quickstep Technique: promenade position, Weave, etc.',
-    'description' : 'Demonstrated by Heather & Victor',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/nqWQBg4WWHE'
-  },
-  {
     'title' : 'Quickstep: Quarter Turn, Progressive Chasse, Forwarc Check Step',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['QuarterTurnToRight', 'ProgressiveChasse'],
@@ -552,22 +424,10 @@ danceVideos = danceVideos.concat([
 
 danceVideos = danceVideos.concat([
   {
-    'title' : 'Rumba demo by Bryan Watson',
-    'description' : 'Mini lesson on technique: different types of walks',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/BDehS-RLEXk'
-  },
-  {
     'title' : 'Rumba demo by champions',
     'description' : 'Demonstrated by Michael & Joanna.',
     'labels' : [],
     'url' : 'http://www.youtube.com/v/KCFogVBJOes'
-  },
-  {
-    'title' : 'Rumba Technique: Basic',
-    'description' : 'Demonstrated by Monika.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/eqSoTyXEpgo'
   },
   {
     'title' : 'Rumba Bronze Practice Routine',
@@ -593,12 +453,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/8G_vy_u4ZcE'
   },
   {
-    'title' : 'Rumba Technique: Basic Movement - Contract core, Hip Movement',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/AaQZhsCZUTY'
-  },
-  {
     'title' : 'Rumba Technique: Open Basic Movement - Contract abdominal musle',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
@@ -615,12 +469,6 @@ danceVideos = danceVideos.concat([
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
     'url' : 'http://www.youtube.com/v/PbqE7LoPe3E'
-  },
-  {
-    'title' : 'Latin Show and Competitive Figures: Cha Cha, Samba, Rumba, Paso Doble',
-    'description' : 'Slavik and Karina. Arm Styling.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/VENWCD2V78I'
   },
   {
     'title' : 'Rumba Technique: feet, knees, body action',
@@ -653,94 +501,16 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/gt-hoKMPEkA'
   },
   {
-    'title' : 'Rumba Fan Position',
-    'description' : 'Slavik and Karina. This is not how it is normally danced, though.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/P2FfUqrLXKY'
-  },
-  {
     'title' : 'Rumba Cuban Rock',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com.',
     'labels' : [],
     'url' : 'http://www.youtube.com/v/wxeeuUtzqVc'
   },
   {
-    'title' : 'Rumba Hand To Hand',
-    'description' : 'Slavik and Karina.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/UBgpFlnrINg'
-  },
-  {
-    'title' : 'Rumba Switch Turns',
-    'description' : 'Slavik and Karina.',
-    'labels' : ['Turn'],
-    'url' : 'http://www.youtube.com/v/8Uys2ErHky0'
-  },
-  {
-    'title' : 'Rumba Solo Spot Turns',
-    'description' : 'Slavik and Karina.',
-    'labels' : ['Turn'],
-    'url' : 'http://www.youtube.com/v/GDcOjf3Gf7I'
-  },
-  {
-    'title' : 'Rumba New York',
-    'description' : 'Slavik and Karina.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/fVanyxvSv1s'
-  },
-  {
     'title' : 'Rumba Cucarachas',
     'description' : '(non-English) ',
     'labels' : ['Cucaracha'],
     'url' : 'http://www.youtube.com/v/wuN-u5h1cMU'
-  },
-  {
-    'title' : 'Rumba Technique: Rotation',
-    'description' : '(non-English)  Demonstrate Rumba Basic.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/y_NH51mt_Ls'
-  },
-  {
-    'title' : 'Rumba Technique: Legs - 1',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/dtSs3RhkNAo'
-  },
-  {
-    'title' : 'Rumba Technique: Legs - 2',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/Y3lp7lvlY4s'
-  },
-  {
-    'title' : 'Rumba Technique: Arms - 3',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/EaekBbp6Taw'
-  },
-  {
-    'title' : 'Rumba Technique: Arms - 2',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/6LBwPEziKys'
-  },
-  {
-    'title' : 'Rumba Technique: Arms - 1',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/751uEEBY08I'
-  },
-  {
-    'title' : 'Rumba Technique: Contraction',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/alTI5KsMuaM'
-  },
-  {
-    'title' : 'Rumba Walk and Basic Technique',
-    'description' : '(non-English) ',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/bMmabQzQnh4'
   },
   {
     'title' : 'Rumba Bronze Routine from a class',
@@ -760,70 +530,6 @@ danceVideos = danceVideos.concat([
       '</ul>',
     'labels' : ['NaturalTop', 'HockeyStick'],
     'url' : 'http://www.youtube.com/v/XwOtNpMRXII'
-  },
-  {
-    'title' : 'Rumba Variations',
-    'description' : 'By Alan Tornsberg & Serena Lecca. Includes Silver, Gold figures. Routine: <ul>  ' +
-      '<li>  Turning Basic  ' + 
-      '<li>  Open Hip Twist  ' + 
-      '<li>  Alemana  ' + 
-      '<li>  Closed Hip Twist  ' + 
-      '<li>  a lot more...  ' + 
-      '</ul>',
-    'labels' : ['ClosedHipTwist'],
-    'url' : 'http://www.youtube.com/v/EF3mEbgCHsE'
-  },
-  {
-    'title' : 'Rumba Bronze Routine',
-    'description' : 'By Slavik and Karina. (Video title says Silver, but these are Bronze figures.) Routine: <ul>  ' +
-      '<li>  Alternative Basic, ending in Fan  ' +
-      '<li>  Alemana  ' +
-      '<li>  Closed Hip Twist  ' +
-      '<li>  Hockey Stick  ' +
-      '<li>  Natural Top  ' +
-      '<li>  Natural Opening Out to Left and Right  ' +
-      '</ul',
-    'labels' : ['ClosedHipTwist', 'OpeningOutToRightAndLeft'],
-    'url' : 'http://www.youtube.com/v/DrViOar0RDs'
-  },
-  {
-    'title' : 'Rumba Newcomer Routine',
-    'description' : 'By Slavik and Karina. (Video title says Bronze, but these are Newcomer figures.) Routine: <ul>  ' +
-      '<li>  Open Basic  ' +
-      '<li>  Closed Basic  ' +
-      '<li>  New York  ' +
-      '<li>  Hand To Hand  ' +
-      '<li>  Shoulder to Shoulder  ' +
-      '<li>  Solo Spot Turn (with brush action)  ' +
-      '<li>  Switch Turns  ' +
-      '<li>  Underarm Turn to Left  ' +
-      '<li>  Underarm Turn to Right  ' +
-      '</ul>',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/VFSpUL-ciFw'
-  },
-  {
-    'title' : 'Rumba Walk Warm Up: Forward and Backward Walk, Checked Forward Walk',
-    'description' : 'Slavik and Karina does Rumba warm up, narrated by Corky Ballas.',
-    'labels' : ['Technique'],
-    'url' : 'http://www.youtube.com/v/SGjEuiyfNg0'
-  },
-  {
-    'title' : 'Rumba Closed Basic Movement',
-    'description' : 'Slavik and Karina does Rumba Closed Basic, narrated by Corky Ballas.',
-    'labels' : ['BasicMovementsClosed'],
-    'url' : 'http://www.youtube.com/v/lYFbYz1nPKU'
-  },
-  {
-    'title' : 'Rumba Walk',
-    'description' : 'Slavik and Karina does Rumba walk, narrated by Corky Ballas.',
-    'labels' : [
-        'ProgressiveWalksFwd',
-        'ProgressiveWalksBack',
-        'ProgressiveWalksFwdRSP',
-        'ProgressiveWalksFwdLSP',
-        'ProgressiveWalksFwdRShadow'],
-    'url' : 'http://www.youtube.com/v/oiNj-juu3pQ'
   }
 ]);
 
@@ -925,12 +631,6 @@ danceVideos = danceVideos.concat([
         '</ul>',
     'labels' : [],
     'url' : 'http://www.youtube.com/v/KOykG6jM5L0'
-  },
-  {
-    'title' : 'Samba Whisk',
-    'description' : 'With detailed breakdown.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/kfU7TNYpFbQ'
   },
   {
     'title' : 'Samba Whisk',
@@ -1139,20 +839,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/mfWhd3CpYD4'
   },
   {
-    'title' : 'Standard Technique by Stephen & Jennifer Hillier',
-    'description' : 'Demonstration by the couple. Detailed explanation on:<ul> ' +
-      '<li>  Use of the knee: compress the knee forward to provide the initial movement of the body. ' +
-      '<li>  To provide power action, keep heel of supporting foot on floor as long as possible. Releasing early unbalances body, looks weak. ' +
-      "<li>  The moving leg/foot: lifting knee, delay moving foot, eventually foot will catch the body, it doesn't arrive before body." +
-      '<li>  Use proper footwork: e.g. HT, T, TH (Waltz). ' +
-      '<li>  2nd step: Swing action: coming through the hip; before placing foot, swing the hip. ' +
-      '<li>  3rd step: using inside muscle to close feet. ' +
-      '<li>  Lowering is every important at end of 3rd step. ' +
-      '</ul>',
-    'labels' : ['SlowWaltz'],
-    'url' : 'http://www.youtube.com/v/vXbAlRnMGIA'
-  },
-  {
     'title' : 'Waltz Silver Practice Routine',
     'description' : 'Andy & Wendy Wong from The Grand Ballroom. Routine: <ul> ' +
       '<li>  Natural Turn ' +
@@ -1257,15 +943,6 @@ danceVideos = danceVideos.concat([
     'description' : 'Instruction by Marcus & Karen Hilton',
     'labels' : ['SlowWaltz', 'OpenTelemark'],
     'url' : 'http://www.youtube.com/v/HeJMUCO8_wg'
-  },
-  {
-    'title' : 'Standard Technique for Ladies by Heather Smith - Vol 2',
-    'description' : 'Header explaiins how to do a proper Open Impetus to Promenade Position:<ul><li>  When Man moves backwards, Lady is driving movement. ' +
-        '<li>  Movement smoothness and fluidity: when moving forward, flex and allow hip joint to move with moving leg <b>across</b> the floor. Do not sit legs and hip on the standing foot. ' +
-        '<li>  Finishing: turning feet, think about leaving upper body still. ' +
-        '</ul>',
-    'labels' : ['SlowWaltz', 'OpenImpetus'],
-    'url' : 'http://www.youtube.com/v/DcWDacTs7O4'
   },
   {
     'title' : 'Waltz Weave from Promenade Position, Chasse From PP',

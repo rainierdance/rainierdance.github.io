@@ -140,18 +140,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/UTJqg3wrNYs'
   },
   {
-    'title' : 'Cha Cha Pratice: body roll break down',
-    'description' : 'Demonstrated by Yulia.',
-    'labels' : ['ChaCha'],
-    'url' : 'http://www.youtube.com/v/k_m0UtSpcRU'
-  },
-  {
-    'title' : 'Cha Cha Pratice: ronde chasse, lock steps, body roll',
-    'description' : 'Demonstrated by Yulia.',
-    'labels' : ['ChaCha'],
-    'url' : 'http://www.youtube.com/v/ItJgJiWV8xE'
-  },
-  {
     'title' : 'Cha Cha Technique: Connection with Floor',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['ChaCha'],
@@ -200,12 +188,6 @@ danceVideos = danceVideos.concat([
     'url' : 'http://www.youtube.com/v/eImhD8_tzBM'
   },
   {
-    'title' : 'Cha Cha New York - Variation',
-    'description' : "New Yorker with Lady's turn. Demonstrated by Max Kozhevnikov & Yulia Zagoruychenko.",
-    'labels' : ['NewYorkLSP', 'NewYorkRSP', 'ChaCha'],
-    'url' : 'http://www.youtube.com/v/INzaQGhMEgY'
-  },
-  {
     'title' : 'Cha Cha Practice Routine - Bronze Level',
     'description' : 'Some basic bronze figures. TaiWan. Routine: <ul> ' +
       '<li>  Closed Basic ' +
@@ -236,76 +218,6 @@ danceVideos = danceVideos.concat([
       '</ul>',
     'labels' : ['ShoulderToShoulder', 'ChaCha'],
     'url' : 'http://www.youtube.com/v/RMjgnIMCu5A'
-  },
-  {
-    'title' : 'Cha Cha: Warm Up',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/lAfPdFerjXs'
-  },
-  {
-    'title' : 'Cha Cha demonstration: Tony & Elena',
-    'description' : 'Narrated by Len Goodman.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/3RDNkR7M1wA'
-  },
-  {
-    'title' : 'Cha Cha Technique: Rotation',
-    'description' : '(non-English)  Demonstrate Cha Cha Basic',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/Zchkhm36MUg'
-  },
-  {
-    'title' : 'Cha Cha Technique: 10 types of chasses',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas. <ol> ' +
-      '<li> Compact Chasse ' +
-      '<li> Forward Lock Chasse ' +
-      '<li> Back Lock Chasse ' +
-      '<li> LRL Chasse ' +
-      '<li> RLF Chasse ' +
-      '<li> Slip Chasse ' +
-      '<li> Hip Twist Chasse ' +
-      '<li> Ronde Chasse ' +
-      '<li> Progressive Chasse ' +
-      '<li> Runaway Chasse (Man does Hip Twist Chasse) ' +
-      '</ol>',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/cOJIsIF7JDc'
-  },
-  {
-    'title' : 'Latin Technique: 4 types of hip actions',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas. 4 types of hip actions. <br><ol> ' +
-      '<li> Settling: settle over straight leg, changing weight, pushing/settling down to the floor, ribcage squeezing with hip. Powerful. '  +
-      '<li> Lateral: not as deep as settling, hips move left to right, lighter in weight, travel across, gently.'  +
-      '<li> Rotating: rotate around spiral column, ribcage is moving with hips.'  +
-      '<li> Twisting: Man settling, Lady twisting.'  +
-      '</ol>',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/oEy4G1NDRDI'
-  },
-  {
-    'title' : 'Cha Cha Closed Basic in open position, Guapacha timing',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/5ipRsFwvONk'
-  },
-  {
-    'title' : 'Cha Cha Technique: Three Cha Cha Chas (Lock Step): no hold, double hand hold, alternating hands',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas. Including an options where Lady does Runaway Chasse.',
-    'labels' : ['ThreeChaChaChas', 'ChaCha'],
-    'url' : 'http://www.youtube.com/v/hUNbbCL9xBI'
-  },
-  {
-    'title' : 'Cha Cha Basic, RLF Chasse, LRL Chasse, Checked Action',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/Wsf9p2e-d18'
-  },
-  {
-    'title' : 'Cha Cha Closed Basic',
-    'description' : 'Demonstrated by Slavik and Karina, narrated by Corky Ballas.',
-    'labels' : ['ClosedBasic', 'ChaCha'],
-    'url' : 'http://www.youtube.com/v/uOroZ47kj7U'
   }
 ]);
 

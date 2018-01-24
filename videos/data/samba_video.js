@@ -99,12 +99,6 @@ danceVideos = danceVideos.concat([
   },
   {
     'title' : 'Samba Whisk',
-    'description' : 'With detailed breakdown.',
-    'labels' : [],
-    'url' : 'http://www.youtube.com/v/kfU7TNYpFbQ'
-  },
-  {
-    'title' : 'Samba Whisk',
     'description' : '(non-English) ',
     'labels' : [],
     'url' : 'http://www.youtube.com/v/2cR7SJEuxcQ'
