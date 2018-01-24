@@ -12,7 +12,7 @@
     //-------------------------------------------
     // globals
     var IS_GADGET = true; 
-    var VERSION = "11.1003.1601";
+    var VERSION = "18.0124.1546";
     var ID_ANALYTICS = "UA-10550268-1";
     var pageTracker;
 
@@ -69,7 +69,6 @@
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
-
 </body> 
 
 ]]></Content>
