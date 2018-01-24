@@ -2,7 +2,7 @@ TIMESTAMP=`date +%g.%m%d.%H%M`
 
 dirname=$1
 if [ -z "$dirname" ]; then
-  echo "Usage: $0 subdir_name_without slash"
+  echo "Usage: $0 subdir_name_without_slash"
   exit 1
 fi
 
@@ -24,11 +24,11 @@ cat $dirname/gadget_boiler_bottom.txt >>$TMP
 # replace IS_GADGET, VERSION, URL
 sed -e 's/IS_GADGET = false/IS_GADGET = true/g' $TMP | \
 sed -e "s/var VERSION = .*$/var VERSION = \"$TIMESTAMP\";/g" | \
-sed -e "s#HREF=\"#HREF=\"https://dancecentral.googlecode.com/svn/trunk/$dirname/#" | \
-sed -e "s#SRC=\"#SRC=\"https://dancecentral.googlecode.com/svn/trunk/$dirname/#" | \
+sed -e "s#HREF=\"#HREF=\"http://code.dancecentral.info/$dirname/#" | \
+sed -e "s#SRC=\"#SRC=\"http://code.dancecentral.info/$dirname/#" | \
 sed -e "/src=\"data/d" | \
 sed -e "/localonly/d" | \
-sed -e "s#<!--DATA-->#<script type=\"text/javascript\" SRC=\"https://dancecentral.googlecode.com/svn/trunk/$DATAFILE\"></script>#" \
+sed -e "s#<!--DATA-->#<script type=\"text/javascript\" SRC=\"http://code.dancecentral.info/$DATAFILE\"></script>#" \
 > $dirname.xml
 
 rm $TMP
