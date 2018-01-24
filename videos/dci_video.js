@@ -37,36 +37,6 @@ function clearSelection() {
   currentIndex = -1;
 }
 
-function showVideo(index, flagTrack) {  // index to "videos"
-
-  if (currentIndex == index)
-      return; // reduce flicker
-
-  clearSelection();
-
-  if (index < 0) return;
-  var video = videos[index];
-
-  var output = [];
-  output.push('<iframe width="480" height="385" src="' + video['url'] + '"></iframe>');
-  output.push('<br>');
-  output.push('<a href="javascript:void(0);" onclick="clearSelection()" style="float:right">X</a>');
-  if (!compactMode()) {
-    document.getElementById('video_' + index).innerHTML = output.join('');
-  } else {  // small set of videos, fixed position on the right. 
-    // made it simple, could do absolute position with layering etc.
-    document.getElementById('divPlayer').innerHTML = output.join('');
-  }
-
-  // hightlight title and description, so we know which one we are showing
-  document.getElementById('title_' + index).className = 'titleSelected';
-  document.getElementById('desc_' + index).className = 'descriptionSelected';
-
-  currentIndex = index;
-
-  if (flagTrack) track('/gadgets/videos/showVideo?sv=' + video['url']);
-  return !compactMode(); // proceed to go to local anchor, otherwise, don't scroll
-}
 
 // case insensitive search, AND releations
 function getSearchResult() {
@@ -119,11 +89,8 @@ function getSearchResult() {
 function updateVideoResult(flagTrack) {
   clearSelection();
 
-/*** 1/22/2018 embedding youtube video causes shockwave errors on 
- some devices and browers, user see virus alert. Remove this feature for now.
-*/
 
-/*
+
   var query = document.getElementById('query').value;
   if (flagTrack) {
     track('/gadgets/videos/search?q=' + encodeURIComponent(query));
@@ -143,9 +110,9 @@ function updateVideoResult(flagTrack) {
   var index = 0;
 
   videos.forEach(function (video) {
-    output.push('<li><a name="v' + index + '"><a target="_self" href="#v' + index + '" class="title" id="title_' + index +
-        '" onclick="return showVideo(' + index + ', true)">' + 
-        video['title'] + '</a></a><br>');
+    output.push('<li><a name="v' + index + '"><a target="_dci_video" href="' + video['url'] + 
+        '" class="title" id="title_' + index +
+        '">' + video['title'] + '</a></a><br>');
      output.push('<table width=100%><tr><td><span class="description" id="desc_' + index + '"  >' + 
         video['description'] + '</span></td><td align=right>');
     output.push('<span id="video_' + index + '"></span>');
@@ -156,7 +123,5 @@ function updateVideoResult(flagTrack) {
   output.push('</ol>');
   element.innerHTML = output.join('');
 
-  showVideo(0);
-*/
 
 }
