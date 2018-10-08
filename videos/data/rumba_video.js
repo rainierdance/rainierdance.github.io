@@ -3,7 +3,7 @@ danceVideos = danceVideos.concat([
     'title' : 'Rumba demo by champions',
     'description' : 'Demonstrated by Michael & Joanna.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/KCFogVBJOes'
+    'url' : 'http://www.youtube.com/watch?v=KCFogVBJOes'
   },
   {
     'title' : 'Rumba Bronze Practice Routine',
@@ -20,73 +20,73 @@ danceVideos = danceVideos.concat([
       '<li>  Alemana  ' +
       '</ol>',
     'labels' : ['HockeyStick', 'NewYork', 'HandToHand', 'SwitchTurn'],
-    'url' : 'http://www.youtube.com/v/NGSa63yR8r8'
+    'url' : 'http://www.youtube.com/watch?v=NGSa63yR8r8'
   },
   {
     'title' : 'Rumba Technique: Swivels (brush)',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/8G_vy_u4ZcE'
+    'url' : 'http://www.youtube.com/watch?v=8G_vy_u4ZcE'
   },
   {
     'title' : 'Rumba Technique: Open Basic Movement - Contract abdominal musle',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/fMrt95CpyrY'
+    'url' : 'http://www.youtube.com/watch?v=fMrt95CpyrY'
   },
   {
     'title' : 'Rumba Closed Hip Twist',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['ClosedHipTwist'],
-    'url' : 'http://www.youtube.com/v/TIwl2zmZwfs'
+    'url' : 'http://www.youtube.com/watch?v=TIwl2zmZwfs'
   },
   {
     'title' : 'Rumba Technique: Figure 8',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/PbqE7LoPe3E'
+    'url' : 'http://www.youtube.com/watch?v=PbqE7LoPe3E'
   },
   {
     'title' : 'Rumba Technique: feet, knees, body action',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/HNSySs9xc-4'
+    'url' : 'http://www.youtube.com/watch?v=HNSySs9xc-4'
   },
   {
     'title' : 'Rumba Basic Movement: Close Basic, Open Basic, Basic In Place, Alternative Basic',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['BasicMovementsClosed', 'BasicMovementsOpen'],
-    'url' : 'http://www.youtube.com/v/r4iX3cp4btc'
+    'url' : 'http://www.youtube.com/watch?v=r4iX3cp4btc'
   },
   {
     'title' : 'Rumba Opening Out to Right and Left',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com.',
     'labels' : ['OpeningOutToRightAndLeft'],
-    'url' : 'http://www.youtube.com/v/LabNqDm1UiQ'
+    'url' : 'http://www.youtube.com/watch?v=LabNqDm1UiQ'
   },
   {
     'title' : 'Rumba Natural Top, Opening Out, Closed Hip Twist',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com.',
     'labels' : ['NaturalTop', 'ClosedHipTwist'],
-    'url' : 'http://www.youtube.com/v/xqatK2FmMeQ'
+    'url' : 'http://www.youtube.com/watch?v=xqatK2FmMeQ'
   },
   {
     'title' : 'Rumba Hockey Stick',
     'description' : '(non-English) ',
     'labels' : ['HockeyStick'],
-    'url' : 'http://www.youtube.com/v/gt-hoKMPEkA'
+    'url' : 'http://www.youtube.com/watch?v=gt-hoKMPEkA'
   },
   {
     'title' : 'Rumba Cuban Rock',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/wxeeuUtzqVc'
+    'url' : 'http://www.youtube.com/watch?v=wxeeuUtzqVc'
   },
   {
     'title' : 'Rumba Cucarachas',
     'description' : '(non-English) ',
     'labels' : ['Cucaracha'],
-    'url' : 'http://www.youtube.com/v/wuN-u5h1cMU'
+    'url' : 'http://www.youtube.com/watch?v=wuN-u5h1cMU'
   },
   {
     'title' : 'Rumba Bronze Routine from a class',
@@ -105,7 +105,7 @@ danceVideos = danceVideos.concat([
       '<li>  Undearm Turn to Right  ' +
       '</ul>',
     'labels' : ['NaturalTop', 'HockeyStick'],
-    'url' : 'http://www.youtube.com/v/XwOtNpMRXII'
+    'url' : 'http://www.youtube.com/watch?v=XwOtNpMRXII'
   }
 ]);
 

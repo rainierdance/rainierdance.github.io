@@ -3,7 +3,7 @@ danceVideos = danceVideos.concat([
     'title' : 'Foxtrot Demo Routine',
     'description' : 'Demonstrated by Mirko & Alessia',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/05SH7tKY0Tk'
+    'url' : 'http://www.youtube.com/watch?v=05SH7tKY0Tk'
   },
   {
     'title' : 'Standard Technique by Monika - Foxtrot',
@@ -12,19 +12,19 @@ danceVideos = danceVideos.concat([
       '<li>  As weight is transfered to the foot, start changing shape by lower shoulder slightly. ' +
       '</ul>',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/jmUJRcw_PM0'
+    'url' : 'http://www.youtube.com/watch?v=jmUJRcw_PM0'
   },
   {
     'title' : 'Foxtrot Three Step',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['ThreeStep'],
-    'url' : 'http://www.youtube.com/v/XOGd_pGMTEY'
+    'url' : 'http://www.youtube.com/watch?v=XOGd_pGMTEY'
   },
   {
     'title' : 'Foxtrot Natural Turn, Open Impetus, and Weave from Promenade Position',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalTurn', 'OpenImpetus', 'WeaveFromPP'],
-    'url' : 'http://www.youtube.com/v/HiKZC_q0ASo'
+    'url' : 'http://www.youtube.com/watch?v=HiKZC_q0ASo'
   },
   {
     'title' : 'Foxtrot Bronze Practice Routine from a class',
@@ -52,7 +52,7 @@ danceVideos = danceVideos.concat([
         '</ul',
     'labels' : ['FeatherStep', 'ReverseTurn', 'ThreeStep', 'NaturalTurn', 'NaturalWeave', 'ClosedImpetusAndFeatherFinish', 'BasicWeave',
       'ChangeOfDirection'],
-    'url' : 'http://www.youtube.com/v/n-Hnhvo3BX0'
+    'url' : 'http://www.youtube.com/watch?v=n-Hnhvo3BX0'
   },
   {
     'title' : 'Foxtrot Newcomer Basic Steps',
@@ -63,13 +63,13 @@ danceVideos = danceVideos.concat([
         '<li>  Natural Turn ' +
         '</ul',
     'labels' : ['FeatherStep', 'ReverseTurn', 'ThreeStep', 'NaturalTurn'],
-    'url' : 'http://www.youtube.com/v/lVEFuQ6NVvE'
+    'url' : 'http://www.youtube.com/watch?v=lVEFuQ6NVvE'
   },
   {
     'title' : 'Foxtrot Feather Step',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['FeatherStep'],
-    'url' : 'http://www.youtube.com/v/qyUi8e_kkhA'
+    'url' : 'http://www.youtube.com/watch?v=qyUi8e_kkhA'
   },
   {
     'title' : 'Foxtrot Basics: routine by Marcus & Karen Hilton',
@@ -80,7 +80,7 @@ danceVideos = danceVideos.concat([
         '<li> a lot of more... ' +
         '</ul>',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/94JbmwxOy_0'
+    'url' : 'http://www.youtube.com/watch?v=94JbmwxOy_0'
   }
 ]);
 

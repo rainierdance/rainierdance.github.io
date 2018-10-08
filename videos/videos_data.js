@@ -260,7 +260,7 @@ danceVideos = danceVideos.concat([
     'title' : 'Foxtrot Demo Routine',
     'description' : 'Demonstrated by Mirko & Alessia',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/05SH7tKY0Tk'
+    'url' : 'http://www.youtube.com/watch?v=05SH7tKY0Tk'
   },
   {
     'title' : 'Standard Technique by Monika - Foxtrot',
@@ -269,19 +269,19 @@ danceVideos = danceVideos.concat([
       '<li>  As weight is transfered to the foot, start changing shape by lower shoulder slightly. ' +
       '</ul>',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/jmUJRcw_PM0'
+    'url' : 'http://www.youtube.com/watch?v=jmUJRcw_PM0'
   },
   {
     'title' : 'Foxtrot Three Step',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['ThreeStep'],
-    'url' : 'http://www.youtube.com/v/XOGd_pGMTEY'
+    'url' : 'http://www.youtube.com/watch?v=XOGd_pGMTEY'
   },
   {
     'title' : 'Foxtrot Natural Turn, Open Impetus, and Weave from Promenade Position',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalTurn', 'OpenImpetus', 'WeaveFromPP'],
-    'url' : 'http://www.youtube.com/v/HiKZC_q0ASo'
+    'url' : 'http://www.youtube.com/watch?v=HiKZC_q0ASo'
   },
   {
     'title' : 'Foxtrot Bronze Practice Routine from a class',
@@ -309,7 +309,7 @@ danceVideos = danceVideos.concat([
         '</ul',
     'labels' : ['FeatherStep', 'ReverseTurn', 'ThreeStep', 'NaturalTurn', 'NaturalWeave', 'ClosedImpetusAndFeatherFinish', 'BasicWeave',
       'ChangeOfDirection'],
-    'url' : 'http://www.youtube.com/v/n-Hnhvo3BX0'
+    'url' : 'http://www.youtube.com/watch?v=n-Hnhvo3BX0'
   },
   {
     'title' : 'Foxtrot Newcomer Basic Steps',
@@ -320,13 +320,13 @@ danceVideos = danceVideos.concat([
         '<li>  Natural Turn ' +
         '</ul',
     'labels' : ['FeatherStep', 'ReverseTurn', 'ThreeStep', 'NaturalTurn'],
-    'url' : 'http://www.youtube.com/v/lVEFuQ6NVvE'
+    'url' : 'http://www.youtube.com/watch?v=lVEFuQ6NVvE'
   },
   {
     'title' : 'Foxtrot Feather Step',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['FeatherStep'],
-    'url' : 'http://www.youtube.com/v/qyUi8e_kkhA'
+    'url' : 'http://www.youtube.com/watch?v=qyUi8e_kkhA'
   },
   {
     'title' : 'Foxtrot Basics: routine by Marcus & Karen Hilton',
@@ -337,7 +337,7 @@ danceVideos = danceVideos.concat([
         '<li> a lot of more... ' +
         '</ul>',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/94JbmwxOy_0'
+    'url' : 'http://www.youtube.com/watch?v=94JbmwxOy_0'
   }
 ]);
 
@@ -346,79 +346,79 @@ danceVideos = danceVideos.concat([
     'title' : 'Quickstep demo: mostly syllabus figures.',
     'description' : 'Demonstrated by Mirko & Alessia',
     'labels' : ['DoubleReverseSpin', 'ReversePivot'],
-    'url' : 'http://www.youtube.com/v/uf6xj2q1jvw'
+    'url' : 'http://www.youtube.com/watch?v=uf6xj2q1jvw'
   },
   {
     'title' : 'Quickstep demo',
     'description' : 'Demonstrated by Marcus and Karen Hilton',
     'labels' : ['DoubleReverseSpin'],
-    'url' : 'http://www.youtube.com/v/mike0D1a06I'
+    'url' : 'http://www.youtube.com/watch?v=mike0D1a06I'
   },
   {
     'title' : 'Quickstep: Natural Spin Turn, V6',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalSpinTurn'],
-    'url' : 'http://www.youtube.com/v/qp8K-9C-Fas'
+    'url' : 'http://www.youtube.com/watch?v=qp8K-9C-Fas'
   },
   {
     'title' : 'Quickstep: Natural Turn, Tipple Chasse, Natural Turn, Back Lock, Running Finish',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalTurn', 'BackLock', 'NaturalTurnAndBackLock', 'RunningFinish'],
-    'url' : 'http://www.youtube.com/v/W6kRMcVD5v8'
+    'url' : 'http://www.youtube.com/watch?v=W6kRMcVD5v8'
   },
   {
     'title' : 'Quickstep: Quarter Turn to Right, Progressive Chasse, Forward Lock, Natural Turn, Tipple Chasse To Right',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['QuarterTurnToRight', 'ProgressiveChasse', 'ForwardLock', 'NaturalTurn', 'TippleChasseToRight'],
-    'url' : 'http://www.youtube.com/v/xi6G9YDbW9s'
+    'url' : 'http://www.youtube.com/watch?v=xi6G9YDbW9s'
   },
   {
     'title' : 'Quickstep: Natural Spin Turn, V6, Chasse to R, Six Quick Run',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalSpinTurn', 'SixQuickRun'],
-    'url' : 'http://www.youtube.com/v/Dyvd1VhtvYk'
+    'url' : 'http://www.youtube.com/watch?v=Dyvd1VhtvYk'
   },
   {
     'title' : 'Quickstep: Natural Spin Turn, V6',
     'description' : 'Demonstrated by Monika',
     'labels' : ['NaturalSpinTurn'],
-    'url' : 'http://www.youtube.com/v/zAsGvBSlaLQ'
+    'url' : 'http://www.youtube.com/watch?v=zAsGvBSlaLQ'
   },
   {
     'title' : 'Quickstep: Natural Turn with Hesitation, Reverse Turn, Reverse Pivot, Cross Chasse',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalTurnWithHesitation', 'ChasseReverseTurn', 'ReversePivot', 'CrossChasse'],
-    'url' : 'http://www.youtube.com/v/EbJxpquVo7g'
+    'url' : 'http://www.youtube.com/watch?v=EbJxpquVo7g'
   },
   {
     'title' : 'Quickstep: Quarter Turn, Progressive Chasse, Forwarc Check Step',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['QuarterTurnToRight', 'ProgressiveChasse'],
-    'url' : 'http://www.youtube.com/v/WEJA6lYEIoY'
+    'url' : 'http://www.youtube.com/watch?v=WEJA6lYEIoY'
   },
   {
     'title' : 'Quickstep: Quarter Turn, Progressive Chasse',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['QuarterTurnToRight', 'ProgressiveChasse'],
-    'url' : 'http://www.youtube.com/v/5MK6d9Cxnp8'
+    'url' : 'http://www.youtube.com/watch?v=5MK6d9Cxnp8'
   },
   {
     'title' : 'Quickstep: Quarter Turn, Progressive Chasse, Forward Lock',
     'description' : 'Couple demo, not much technique.',
     'labels' : ['ForwardLock', 'QuarterTurnToRight', 'ProgressiveChasse'],
-    'url' : 'http://www.youtube.com/v/B5mkO7mg2Wc'
+    'url' : 'http://www.youtube.com/watch?v=B5mkO7mg2Wc'
   },
   {
     'title' : 'Quickstep: Natural Turn, Back Lock, Running Finish',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalTurn', 'BackLock', 'NaturalTurnAndBackLock', 'RunningFinish', 'QuarterTurnToRight'],
-    'url' : 'http://www.youtube.com/v/Sa5VUmcCuOg'
+    'url' : 'http://www.youtube.com/watch?v=Sa5VUmcCuOg'
   },
   {
     'title' : 'Quickstep: Forward Lock',
     'description' : 'Couple demo, not much technique.',
     'labels' : ['ForwardLock'],
-    'url' : 'http://www.youtube.com/v/ZyshTQuAHFM'
+    'url' : 'http://www.youtube.com/watch?v=ZyshTQuAHFM'
   }
 ]);
 
@@ -427,7 +427,7 @@ danceVideos = danceVideos.concat([
     'title' : 'Rumba demo by champions',
     'description' : 'Demonstrated by Michael & Joanna.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/KCFogVBJOes'
+    'url' : 'http://www.youtube.com/watch?v=KCFogVBJOes'
   },
   {
     'title' : 'Rumba Bronze Practice Routine',
@@ -444,73 +444,73 @@ danceVideos = danceVideos.concat([
       '<li>  Alemana  ' +
       '</ol>',
     'labels' : ['HockeyStick', 'NewYork', 'HandToHand', 'SwitchTurn'],
-    'url' : 'http://www.youtube.com/v/NGSa63yR8r8'
+    'url' : 'http://www.youtube.com/watch?v=NGSa63yR8r8'
   },
   {
     'title' : 'Rumba Technique: Swivels (brush)',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/8G_vy_u4ZcE'
+    'url' : 'http://www.youtube.com/watch?v=8G_vy_u4ZcE'
   },
   {
     'title' : 'Rumba Technique: Open Basic Movement - Contract abdominal musle',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/fMrt95CpyrY'
+    'url' : 'http://www.youtube.com/watch?v=fMrt95CpyrY'
   },
   {
     'title' : 'Rumba Closed Hip Twist',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['ClosedHipTwist'],
-    'url' : 'http://www.youtube.com/v/TIwl2zmZwfs'
+    'url' : 'http://www.youtube.com/watch?v=TIwl2zmZwfs'
   },
   {
     'title' : 'Rumba Technique: Figure 8',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/PbqE7LoPe3E'
+    'url' : 'http://www.youtube.com/watch?v=PbqE7LoPe3E'
   },
   {
     'title' : 'Rumba Technique: feet, knees, body action',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/HNSySs9xc-4'
+    'url' : 'http://www.youtube.com/watch?v=HNSySs9xc-4'
   },
   {
     'title' : 'Rumba Basic Movement: Close Basic, Open Basic, Basic In Place, Alternative Basic',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['BasicMovementsClosed', 'BasicMovementsOpen'],
-    'url' : 'http://www.youtube.com/v/r4iX3cp4btc'
+    'url' : 'http://www.youtube.com/watch?v=r4iX3cp4btc'
   },
   {
     'title' : 'Rumba Opening Out to Right and Left',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com.',
     'labels' : ['OpeningOutToRightAndLeft'],
-    'url' : 'http://www.youtube.com/v/LabNqDm1UiQ'
+    'url' : 'http://www.youtube.com/watch?v=LabNqDm1UiQ'
   },
   {
     'title' : 'Rumba Natural Top, Opening Out, Closed Hip Twist',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com.',
     'labels' : ['NaturalTop', 'ClosedHipTwist'],
-    'url' : 'http://www.youtube.com/v/xqatK2FmMeQ'
+    'url' : 'http://www.youtube.com/watch?v=xqatK2FmMeQ'
   },
   {
     'title' : 'Rumba Hockey Stick',
     'description' : '(non-English) ',
     'labels' : ['HockeyStick'],
-    'url' : 'http://www.youtube.com/v/gt-hoKMPEkA'
+    'url' : 'http://www.youtube.com/watch?v=gt-hoKMPEkA'
   },
   {
     'title' : 'Rumba Cuban Rock',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/wxeeuUtzqVc'
+    'url' : 'http://www.youtube.com/watch?v=wxeeuUtzqVc'
   },
   {
     'title' : 'Rumba Cucarachas',
     'description' : '(non-English) ',
     'labels' : ['Cucaracha'],
-    'url' : 'http://www.youtube.com/v/wuN-u5h1cMU'
+    'url' : 'http://www.youtube.com/watch?v=wuN-u5h1cMU'
   },
   {
     'title' : 'Rumba Bronze Routine from a class',
@@ -529,7 +529,7 @@ danceVideos = danceVideos.concat([
       '<li>  Undearm Turn to Right  ' +
       '</ul>',
     'labels' : ['NaturalTop', 'HockeyStick'],
-    'url' : 'http://www.youtube.com/v/XwOtNpMRXII'
+    'url' : 'http://www.youtube.com/watch?v=XwOtNpMRXII'
   }
 ]);
 
@@ -538,79 +538,79 @@ danceVideos = danceVideos.concat([
     'title' : 'Samba Lessons',
     'description' : 'Demonstrated by Karen. lockstepper channel',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/Rfl2u7DBkPM'
+    'url' : 'http://www.youtube.com/watch?v=Rfl2u7DBkPM'
   },
   {
     'title' : 'Samba Technique: Samba Locks',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['Walk'],
-    'url' : 'http://www.youtube.com/v/yy2vFPocVNs'
+    'url' : 'http://www.youtube.com/watch?v=yy2vFPocVNs'
   },
   {
     'title' : 'Samba Corta Jaca',
     'description' : 'Short demonstration.',
     'labels' : ['CortaJaca'],
-    'url' : 'http://www.youtube.com/v/n3wUbC8unpM'
+    'url' : 'http://www.youtube.com/watch?v=n3wUbC8unpM'
   },
   {
     'title' : 'Samba Corta Jaca',
     'description' : '(non-English) ',
     'labels' : ['CortaJaca'],
-    'url' : 'http://www.youtube.com/v/8mk6lw9MpiU'
+    'url' : 'http://www.youtube.com/watch?v=8mk6lw9MpiU'
   },
   {
     'title' : 'Samba: Side and Stationary Samba Walks',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['Walk'],
-    'url' : 'http://www.youtube.com/v/4-5B59InbSA'
+    'url' : 'http://www.youtube.com/watch?v=4-5B59InbSA'
   },
   {
     'title' : 'Samba Technique: Warm Up, Walks',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['Walk'],
-    'url' : 'http://www.youtube.com/v/KL0lI6ydofI'
+    'url' : 'http://www.youtube.com/watch?v=KL0lI6ydofI'
   },
   {
     'title' : 'Samba Reverse Turn, Reverse Rolls, Traveling Bota Fogos, Traveling Voltas',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['ReverseTurn', 'ReverseRoll', 'TravelingBotaFogosBack'],
-    'url' : 'http://www.youtube.com/v/BWE2fGQ1TFE'
+    'url' : 'http://www.youtube.com/watch?v=BWE2fGQ1TFE'
   },
   {
     'title' : 'Samba Criss Cross Voltas, Maypole',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['CrissCrossVoltas', 'Maypole'],
-    'url' : 'http://www.youtube.com/v/lT0pQ1_ZK7E'
+    'url' : 'http://www.youtube.com/watch?v=lT0pQ1_ZK7E'
   },
   {
     'title' : 'Samba Technique: Rhythm Bounce',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/5PchXfCpBy0'
+    'url' : 'http://www.youtube.com/watch?v=5PchXfCpBy0'
   },
   {
     'title' : 'Samba Technique: Basic Movements',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/7sBGci3ZvLY'
+    'url' : 'http://www.youtube.com/watch?v=7sBGci3ZvLY'
   },
   {
     'title' : 'Samba Volta Details',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/QLPYcRlvdLY'
+    'url' : 'http://www.youtube.com/watch?v=QLPYcRlvdLY'
   },
   {
     'title' : 'Samba Volta Movements',
     'description' : 'Demonstrated by Franco & Simone, Stepping Out Studio.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/JTGSu1Tu5X4'
+    'url' : 'http://www.youtube.com/watch?v=JTGSu1Tu5X4'
   },
   {
     'title' : 'Samba Demo: Whisk, Volta, Underarm Turn',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/AmOZmkuhJ_M'
+    'url' : 'http://www.youtube.com/watch?v=AmOZmkuhJ_M'
   },
   {
     'title' : 'Samba Practice Routine',
@@ -630,31 +630,31 @@ danceVideos = danceVideos.concat([
         '<li>  Whisk to Right 2 beats ' + 
         '</ul>',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/KOykG6jM5L0'
+    'url' : 'http://www.youtube.com/watch?v=KOykG6jM5L0'
   },
   {
     'title' : 'Samba Whisk',
     'description' : '(non-English) ',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/2cR7SJEuxcQ'
+    'url' : 'http://www.youtube.com/watch?v=2cR7SJEuxcQ'
   },
   {
     'title' : 'Samba Whisk and Voltas',
     'description' : 'Demonstrated by Monika.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/ACtl9PlOusg'
+    'url' : 'http://www.youtube.com/watch?v=ACtl9PlOusg'
   },
   {
     'title' : 'Samba Whisk',
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/MQ1JrnAbGAM'
+    'url' : 'http://www.youtube.com/watch?v=MQ1JrnAbGAM'
   },
   {
     'title' : 'Samba Whisk',
     'description' : 'Demonstrated by Nicole and Matthew Cutler',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/QJGwysJbmwc'
+    'url' : 'http://www.youtube.com/watch?v=QJGwysJbmwc'
   }
 ]);
 
@@ -663,13 +663,13 @@ danceVideos = danceVideos.concat([
     'title' : "Tango: Walk",
     'description' : 'Demonstrated by William Pino.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/wHkgUOLFtRw'
+    'url' : 'http://www.youtube.com/watch?v=wHkgUOLFtRw'
   },
   {
     'title' : "Tango: Back Open Promenade", 
     'description' : 'Demonstrated by William Pino.',
     'labels' : ['BackOpenPromenade'],
-    'url' : 'http://www.youtube.com/v/2DvkG3il_Ks'
+    'url' : 'http://www.youtube.com/watch?v=2DvkG3il_Ks'
   },
   {
     'title' : "Tango: Routine",
@@ -683,103 +683,103 @@ danceVideos = danceVideos.concat([
       '<li>  Closed Promenade' +
       '</ol>',
     'labels' : ['ProgressiveLink', 'OpenPromenade', 'OutiseSwivel', 'PromenadeLink', 'ClosedPromenade'],
-    'url' : 'http://www.youtube.com/v/sS0dJ54A9jQ'
+    'url' : 'http://www.youtube.com/watch?v=sS0dJ54A9jQ'
   },
   {
     'title' : "Tango Technique: Tango Walk, Progressive Side Step",
     'description' : 'Demonstrated by Monika.',
     'labels' : ['ProgressiveSideStep'],
-    'url' : 'http://www.youtube.com/v/C6KBqf7fb_M'
+    'url' : 'http://www.youtube.com/watch?v=C6KBqf7fb_M'
   },
   {
     'title' : "Tango: Open Reverse Turn Lady Outside",
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['OpenReverseTurnLadyOutside'],
-    'url' : 'http://www.youtube.com/v/MfumvQ0e2Zs'
+    'url' : 'http://www.youtube.com/watch?v=MfumvQ0e2Zs'
   },
   {
     'title' : "Tango: Natural Promenade Turn, Rock Turn",
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['NaturalPromenadeTurn', 'RockTurn'],
-    'url' : 'http://www.youtube.com/v/p0XJQ5vJswU'
+    'url' : 'http://www.youtube.com/watch?v=p0XJQ5vJswU'
   },
   {
     'title' : "Tango: Rock Turn - Lady's steps",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['RockTurn'],
-    'url' : 'http://www.youtube.com/v/8aHEtsgs1ws'
+    'url' : 'http://www.youtube.com/watch?v=8aHEtsgs1ws'
   },
   {
     'title' : "Tango: Rock Turn - with partner",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['RockTurn'],
-    'url' : 'http://www.youtube.com/v/y1kLvsfKnbQ'
+    'url' : 'http://www.youtube.com/watch?v=y1kLvsfKnbQ'
   },
   {
     'title' : "Tango: Rock Turn - Man's steps",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['RockTurn'],
-    'url' : 'http://www.youtube.com/v/Tov3-0p8dto'
+    'url' : 'http://www.youtube.com/watch?v=Tov3-0p8dto'
   },
   {
     'title' : "Tango: Open Promenade",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['OpenPromenade'],
-    'url' : 'http://www.youtube.com/v/OcWVOD03OsM'
+    'url' : 'http://www.youtube.com/watch?v=OcWVOD03OsM'
   },
   {
     'title' : "Tango: Progressive Link",
     'description' : 'Demonstrated by Victor & Header',
     'labels' : ['ProgressiveLink'],
-    'url' : 'http://www.youtube.com/v/vf3b7X8pv-4'
+    'url' : 'http://www.youtube.com/watch?v=vf3b7X8pv-4'
   },
   {
     'title' : "Tango: Progressive Link & Head Flick",
     'description' : 'Demonstrated by Marcus & Karen Hilton.',
     'labels' : ['ProgressiveLink'],
-    'url' : 'http://www.youtube.com/v/swjrEwMnwHI'
+    'url' : 'http://www.youtube.com/watch?v=swjrEwMnwHI'
   },
   {
     'title' : "Tango: Progressive Link, Open Promenade",
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['ProgressiveLink', 'OpenPromenade'],
-    'url' : 'http://www.youtube.com/v/vOdwVSgTBFs'
+    'url' : 'http://www.youtube.com/watch?v=vOdwVSgTBFs'
   },
   {
     'title' : "Tango: Walk, Progressive Link, Closed Promenade",
     'description' : 'Demonstrated by Andy & Wendy Wong from grandballroom.com',
     'labels' : ['ProgressiveLink', 'ClosedPromenade'],
-    'url' : 'http://www.youtube.com/v/hEH7m_t5erQ'
+    'url' : 'http://www.youtube.com/watch?v=hEH7m_t5erQ'
   },
   {
     'title' : "Tango: Walk, Progressive Link - with partner & music",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['ProgressiveLink'],
-    'url' : 'http://www.youtube.com/v/P4tdbZZdhzM'
+    'url' : 'http://www.youtube.com/watch?v=P4tdbZZdhzM'
   },
   {
     'title' : "Tango: Walk, Progressive Link - Lady's steps",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['ProgressiveLink'],
-    'url' : 'http://www.youtube.com/v/PoaRzMZm8kQ'
+    'url' : 'http://www.youtube.com/watch?v=PoaRzMZm8kQ'
   },
   {
     'title' : "Tango: Walk, Progressive Link - with partner",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['ProgressiveLink'],
-    'url' : 'http://www.youtube.com/v/EQT3ztp9l9A'
+    'url' : 'http://www.youtube.com/watch?v=EQT3ztp9l9A'
   },
   {
     'title' : "Tango: Walk, Progressive Link - Man's steps",
     'description' : 'Demonstrated by Sarolta Eke & Tamas Kassay',
     'labels' : ['ProgressiveLink'],
-    'url' : 'http://www.youtube.com/v/qzCf0Tw6hOs'
+    'url' : 'http://www.youtube.com/watch?v=qzCf0Tw6hOs'
   },
   {
     'title': "Tango: Walks and Progressive Link -- Fallaway Promenade -- Natural Twist Turn",
     'description' : 'Demonstrated by Andy and Wendy Wong from grandballroom.com',
     'labels' : ['FallawayPromenade','NaturalTwistTurn'],
-    'url' : 'http://www.youtube.com/v/JodkXIcu4bU'
+    'url' : 'http://www.youtube.com/watch?v=JodkXIcu4bU'
   }
 ]);
 
@@ -788,7 +788,7 @@ danceVideos = danceVideos.concat([
     'title' : 'Viennese Waltz: Reverse Turn',
     'description' : 'Demonstrated by Monika.',
     'labels' : ['ReverseTurn', 'VWaltz'],
-    'url' : 'http://www.youtube.com/v/qq4tZR627-0'
+    'url' : 'http://www.youtube.com/watch?v=qq4tZR627-0'
   }
 ]);
 
@@ -812,31 +812,31 @@ danceVideos = danceVideos.concat([
       '</ol> Repeat from #1.',
     'labels' : ['SlowWaltz', 'NaturalSpinTurn', 'ReverseTurn', 'DoubleReverseSpin', 'ProgressiveChasseToR', 'BackLock', 'ClosedImpetus', 'ReversePivot', 'ReverseCorte', 
       'OutsideChange', 'ChasseFromPP'],
-    'url' : 'http://www.youtube.com/v/-KsMGs-Pz3M'
+    'url' : 'http://www.youtube.com/watch?v=-KsMGs-Pz3M'
   },
   {
     'title' : 'Basic Waltz Demo - Mirko Gozzoli and Alessia Betti',
     'description' : 'Demo of various Waltz syllabus figures',
     'labels' : ['SlowWaltz', 'DoubleReverseSpin', 'NaturalSpinturn'],
-    'url' : 'http://www.youtube.com/v/Ve82-LCzXFI'
+    'url' : 'http://www.youtube.com/watch?v=Ve82-LCzXFI'
   },
   {
     'title' : "Waltz Cross Hesitation - Man's steps",
     'description' : 'Instruction by Expert Village.',
     'labels' : ['SlowWaltz', 'CrossHesitation'],
-    'url' : 'http://www.youtube.com/v/2zlxHPubQQk'
+    'url' : 'http://www.youtube.com/watch?v=2zlxHPubQQk'
   },
   {
     'title' : "Waltz Cross Hesitation - Lady's steps",
     'description' : 'Instruction by Expert Village.',
     'labels' : ['SlowWaltz', 'CrossHesitation'],
-    'url' : 'http://www.youtube.com/v/X3MAiwdHKHs'
+    'url' : 'http://www.youtube.com/watch?v=X3MAiwdHKHs'
   },
   {
     'title' : 'Waltz Cross Hesitation - with partner',
     'description' : 'Instruction by Expert Village.',
     'labels' : ['SlowWaltz', 'CrossHesitation'],
-    'url' : 'http://www.youtube.com/v/mfWhd3CpYD4'
+    'url' : 'http://www.youtube.com/watch?v=mfWhd3CpYD4'
   },
   {
     'title' : 'Waltz Silver Practice Routine',
@@ -869,7 +869,7 @@ danceVideos = danceVideos.concat([
       '</ul>',
     'labels' : ['SlowWaltz', 'HesitationChange', 'NaturalTurn', 'OpenImpetus', 'WeaveFromPP', 'ChasseFromPP', 'NaturalSpinTurn',
       'TurningLock', 'Wing', 'ProgressiveChasseToR', 'BackLock', 'OutsideSpin', 'DoubleReverseSpin', 'Whisk', 'ReverseCorte'],
-    'url' : 'http://www.youtube.com/v/f8gKo_hjC5M'
+    'url' : 'http://www.youtube.com/watch?v=f8gKo_hjC5M'
   },
   {
     'title' : 'Waltz Bronze Practice Routine - 1',
@@ -889,7 +889,7 @@ danceVideos = danceVideos.concat([
       '<li>  (repeat the long and short side routine) ' +
       '</ul>',
     'labels' : ['SlowWaltz', 'ChasseFromPP', 'OutsideChange', 'HesitationChange', 'ReverseTurn', 'NaturalSpinTurn'],
-    'url' : 'http://www.youtube.com/v/YPRSbMS9fRo'
+    'url' : 'http://www.youtube.com/watch?v=YPRSbMS9fRo'
   },
   {
     'title' : 'Waltz Bronze Practice Routine - 2',
@@ -924,25 +924,25 @@ danceVideos = danceVideos.concat([
       '</ul>',
     'labels' : ['SlowWaltz', 'HesitationChange', 'ReverseTurn', 'ChasseFromPP', 'NaturalTurn', 'OutsideChange',
       'NaturalSpinTurn', 'BasicWeave', 'WeaveFromPP', 'ReverseCorte', 'Wing', 'ProgressiveChasseToR'],
-    'url' : 'http://www.youtube.com/v/v38L8iyiAR8'
+    'url' : 'http://www.youtube.com/watch?v=v38L8iyiAR8'
   },
   {
     'title' : 'Waltz Whisk and Chasse From Promenade Position',
     'description' : 'Instruction  by Monika Olejnik at a Dance Spectrum class.',
     'labels' : ['SlowWaltz', 'ChasseFromPP'],
-    'url' : 'http://www.youtube.com/v/DbqTHN06-vc'
+    'url' : 'http://www.youtube.com/watch?v=DbqTHN06-vc'
   },
   {
     'title' : 'Waltz Technique: Movement',
     'description' : 'Monika Olejnik teaches ballroom technique class at Dance Spectrum.',
     'labels' : ['SlowWaltz'],
-    'url' : 'http://www.youtube.com/v/jmRRX36RqJo'
+    'url' : 'http://www.youtube.com/watch?v=jmRRX36RqJo'
   },
   {
     'title' : 'Waltz Open Telemark',
     'description' : 'Instruction by Marcus & Karen Hilton',
     'labels' : ['SlowWaltz', 'OpenTelemark'],
-    'url' : 'http://www.youtube.com/v/HeJMUCO8_wg'
+    'url' : 'http://www.youtube.com/watch?v=HeJMUCO8_wg'
   },
   {
     'title' : 'Waltz Weave from Promenade Position, Chasse From PP',
@@ -951,7 +951,7 @@ danceVideos = danceVideos.concat([
       "<li>  Chasse: close head on '&', don't turn body" +
       '</ul>',
     'labels' : ['SlowWaltz', 'ChasseFromPP', 'WeaveFromPP'],
-    'url' : 'http://www.youtube.com/v/RFmpqAly77o'
+    'url' : 'http://www.youtube.com/watch?v=RFmpqAly77o'
   },
   {
     'title' : 'Waltz Demo, Timing',
@@ -992,43 +992,43 @@ danceVideos = danceVideos.concat([
         '<li>  Lunge ' +
       '</ul>',
     'labels' : ['SlowWaltz', 'ReversePivot', 'DoubleReverseSpin', 'BackLock', 'ReverseTurn', 'BackWhisk', 'OutsideSpin', 'ChasseFromPP', 'TurningLock'],
-    'url' : 'http://www.youtube.com/v/Ve82-LCzXFI'
+    'url' : 'http://www.youtube.com/watch?v=Ve82-LCzXFI'
   },
   {
     'title' : 'Waltz Basics, Timing',
     'description' : 'Instruction by Marcus & Karen Hilton',
     'labels' : ['SlowWaltz', 'DoubleReverseSpin'],
-    'url' : 'http://www.youtube.com/v/sTU55Lwc-Y4'
+    'url' : 'http://www.youtube.com/watch?v=sTU55Lwc-Y4'
   },
   {
     'title' : 'Waltz Showdance WSS 1998 by Marcus & Karen Hilton',
     'description' : '9 time professional standard champion.',
     'labels' : ['SlowWaltz', 'Performance'],
-    'url' : 'http://www.youtube.com/v/_gvomcBo8xI'
+    'url' : 'http://www.youtube.com/watch?v=_gvomcBo8xI'
   },
   {
     'title' : 'Waltz Progressive Chasse To the Right',
     'description' : 'Instruction by Marcus & Karen Hilton',
     'labels' : ['SlowWaltz', 'ProgressiveChasseToR'],
-    'url' : 'http://www.youtube.com/v/R-70LvB9oOI'
+    'url' : 'http://www.youtube.com/watch?v=R-70LvB9oOI'
   },
   {
     'title' : 'Waltz Outside Change, Back Check & Natural Pivot',
     'description' : 'Instruction by Marcus & Karen Hilton',
     'labels' : ['SlowWaltz', 'OutsideChange'],
-    'url' : 'http://www.youtube.com/v/sTDPFmhHzA8'
+    'url' : 'http://www.youtube.com/watch?v=sTDPFmhHzA8'
   },
   {
     'title' : 'Waltz Hesitation Change',
     'description' : 'Andy & Wendy Wong from The Grand Ballroom',
     'labels' : ['SlowWaltz', 'HesitationChange'],
-    'url' : 'http://www.youtube.com/v/CkVD07TrgPE'
+    'url' : 'http://www.youtube.com/watch?v=CkVD07TrgPE'
   },
   {
     'title' : 'Waltz Natural Spin Turn, Overturned Turning Lock to PP',
     'description' : 'Instruction by Marcus & Karen Hilton',
     'labels' : ['SlowWaltz', 'NaturalSpinTurn', 'TurningLock'],
-    'url' : 'http://www.youtube.com/v/dU1kHWdahvM'
+    'url' : 'http://www.youtube.com/watch?v=dU1kHWdahvM'
   },
   {
     'title' : 'Waltz Professional Competition, 2009 China.',
@@ -1048,7 +1048,7 @@ danceVideos = danceVideos.concat([
       '<li>  Closed Telemark 123 ' +
       '</ul>',
     'labels' : ['SlowWaltz', 'Whisk', 'ChasseFromPP', 'NaturalTurn', 'NaturalSpinTurn', 'ReverseTurn', 'OpenImpetus', 'WeaveFromPP', 'BackWhisk', 'Wing', 'ClosedTelemark' ],
-    'url' : 'http://www.youtube.com/v/rRemfZIXM0g'
+    'url' : 'http://www.youtube.com/watch?v=rRemfZIXM0g'
   },
   {
     'title' : 'Waltz Whisk, Chasse From Promenade, Natural Turn from OP',
@@ -1058,19 +1058,19 @@ danceVideos = danceVideos.concat([
         '<li> Natural Turn from Outside Partner Position ' +
         '</ul>',
     'labels' : ['SlowWaltz', 'Whisk', 'ChasseFromPP', 'NaturalTurn'],
-    'url' : 'http://www.youtube.com/v/Qz7V1htqLw8'
+    'url' : 'http://www.youtube.com/watch?v=Qz7V1htqLw8'
   },
   {
     'title' : 'Waltz Reverse Turn',
     'description' : 'This shows quarter turn to left to complete a box, not as described in syllabus. Good for pratice. Demonstrated by Andy & Wendy Wong from The Grand Ballroom',
     'labels' : ['SlowWaltz', 'ReverseTurn'],
-    'url' : 'http://www.youtube.com/v/lmCaPPcDxR8'
+    'url' : 'http://www.youtube.com/watch?v=lmCaPPcDxR8'
   },
   {
     'title' : 'Waltz LF Closed Change',
     'description' : 'Instruction  by Andy & Wendy Wong from The Grand Ballroom. (For beginners.)',
     'labels' : ['SlowWaltz', 'ClosedChangeLF'],
-    'url' : 'http://www.youtube.com/v/1Iw4x7yEfZc'
+    'url' : 'http://www.youtube.com/watch?v=1Iw4x7yEfZc'
   },
   {
     'title' : 'Waltz Natural Turn, Reverse Turn, and Closed Change',
@@ -1081,31 +1081,31 @@ danceVideos = danceVideos.concat([
         '<li> LF Closed Change ' +
         '</ul>',
     'labels' : ['SlowWaltz', 'NaturalTurn', 'ReverseTurn', 'ClosedChangeLF', 'ClosedChangeRF'],
-    'url' : 'http://www.youtube.com/v/NyR0pntHNM0'
+    'url' : 'http://www.youtube.com/watch?v=NyR0pntHNM0'
   },
   {
     'title' : 'Waltz Whisk',
     'description' : 'Demonstration only. From ballroomdancers.com',
     'labels' : ['SlowWaltz', 'Whisk'],
-    'url' : 'http://www.youtube.com/v/eHOgrhxFW_o'
+    'url' : 'http://www.youtube.com/watch?v=eHOgrhxFW_o'
   },
   {
     'title' : 'Waltz Chasse From Promenade',
     'description' : 'Demonstration only. From ballroomdancers.com',
     'labels' : ['SlowWaltz', 'ChasseFromPP'],
-    'url' : 'http://www.youtube.com/v/AKha1aMcqs0'
+    'url' : 'http://www.youtube.com/watch?v=AKha1aMcqs0'
   },
   {
     'title' : 'Waltz Natural Spin Turn',
     'description' : 'From ballroomdancers.com',
     'labels' : ['SlowWaltz', 'NaturalSpinTurn'],
-    'url' : 'http://www.youtube.com/v/ssdbLOWqj3w'
+    'url' : 'http://www.youtube.com/watch?v=ssdbLOWqj3w'
   },
   {
     'title' : 'Waltz Basic Weave',
     'description' : 'Andy & Wendy Wong from The Grand Ballroom',
     'labels' : ['SlowWaltz', 'BasicWeave'],
-    'url' : 'http://www.youtube.com/v/YlkmzsQ6wmU'
+    'url' : 'http://www.youtube.com/watch?v=YlkmzsQ6wmU'
   }
 ]);
 

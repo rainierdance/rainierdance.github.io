@@ -3,13 +3,13 @@ danceVideos = danceVideos.concat([
     'title' : 'Standard Technique: Take the frame with you',
     'description' : 'Demonstrated Glen Weiss',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/anAhk5Zw-VA'
+    'url' : 'http://www.youtube.com/watch?v=anAhk5Zw-VA'
   },
   {
     'title' : 'Latin Bondy Roll',
     'description' : 'Demonstrated Monika',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/KbqHP5qIt0I'
+    'url' : 'http://www.youtube.com/watch?v=KbqHP5qIt0I'
   },
   {
     'title' : 'Standard Technique by Glen Weiss',
@@ -21,13 +21,13 @@ danceVideos = danceVideos.concat([
       '<li> Flex our knees slightly forward  ' +
       '</ul>',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/kW-ffl7i5-c'
+    'url' : 'http://www.youtube.com/watch?v=kW-ffl7i5-c'
   },
   {
     'title' : 'Latin Styling Demonstration - Portland Dancesport',
     'description' : 'Demonstrated using Cha Cha. 5 points on leg action, body rhythm, arm styling, ronde, swivels.',
     'labels' : [],
-    'url' : 'http://www.youtube.com/v/w98G0tPWTPQ'
+    'url' : 'http://www.youtube.com/watch?v=w98G0tPWTPQ'
   }
 ]);
 
