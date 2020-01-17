@@ -6471,7 +6471,7 @@ var foxtrotFigures =
           {
             'name' : 'Three Alemanas',
             'level' : 'Gold',
-            'urlpath' : 'three-alamanas',
+            'urlpath' : 'three-alemanas',
             'timing' : '2341 2341 2341 2341',
             'startFoot' : 'LF',
             'follow' : [

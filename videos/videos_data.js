@@ -893,35 +893,7 @@ danceVideos = danceVideos.concat([
   },
   {
     'title' : 'Waltz Bronze Practice Routine - 2',
-    'description' : 'Demonstrated by Andy & Wendy Wong from The Grand Ballroom. (Has some Silver steps.) Routine: <ul> ' +
-      '<li>  Hesitation Change ' +
-      '<li>  Reverse Turn ' +
-      '<li>  Whisk ' +
-      '<li>  Chasse From Promenade (PP) ' +
-      '<li>  Natural Turn (123) ' +
-      '<li>  Outside Change ' +
-      '<li>  Natural Spin Turn (underturned) ' +
-      '<li>  Reverse Turn (4-6) ' +
-      '<li>  Basic Weave ' +
-      '<li>  Natural Spin Turn  ' +
-      '<li>  Reverse Turn (4-6) ' +
-      '<li>  Whisk ' +
-      '<li>  Weave From Promenade ' +
-      '<li>  Hesitation Change ' +
-      '<li>  Reverse Turn (1-3) ' +
-      '<li>  Reverse Corte ' +
-      '<li>  Whisk ' +
-      '<li>  Chasse From Promenade (PP) ' +
-      '<li>  Natural Spin Turn ' +
-      '<li>  Reverse Turn (4-6) ' +
-      '<li>  Whisk ' +
-      '<li>  Wing ' +
-      '<li>  Progressive Chasse To Right ' +
-      '<li>  Outside Change ' +
-      '<li>  Natural Spin Turn ' +
-      '<li>  Reverse Turn (4-6) ' +
-      '<li>  LF Closed Change ' +
-      '</ul>',
+    'description' : 'Demonstrated by Andy & Wendy Wong from The Grand Ballroom. (Has some Silver steps.)',
     'labels' : ['SlowWaltz', 'HesitationChange', 'ReverseTurn', 'ChasseFromPP', 'NaturalTurn', 'OutsideChange',
       'NaturalSpinTurn', 'BasicWeave', 'WeaveFromPP', 'ReverseCorte', 'Wing', 'ProgressiveChasseToR'],
     'url' : 'http://www.youtube.com/watch?v=v38L8iyiAR8'
