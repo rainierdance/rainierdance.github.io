@@ -653,6 +653,7 @@ var foxtrotFigures =
       'startAlignment' : ['Pointing DC'],
       'startDirection' : 'fwd',
       'startFoot' : 'RF',
+      'timing' : 'SQQ QQQQ S',
       'follow' : [
         { 'id' : 'ThreeStep' },
         { 'id' : 'ChangeOfDirection' },
@@ -670,6 +671,7 @@ var foxtrotFigures =
       'urlpath' : 'reverse-wave',
       'startAlignment' : ['LOD'],
       'startFoot' : 'LF',
+      'timing' : 'SQQ SQQ SSS',
       'startDirection' : 'fwd',
       'follow' : [
         { 'id' : 'FeatherStep' },
