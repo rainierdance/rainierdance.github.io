@@ -316,7 +316,7 @@ function getFigureLink(figureID, inPage) {
     if (figure['urlpath']) {
       output.push('<a class="' + styleClass + '" style="color:' + COLOR_MAP[figure['level']] + '"');
       output.push(' onclick="return onClickFigure(\'' + figureID + '\');" ');
-      output.push(' href="' + (generateRelativeUrl ? '' : URL_BASE) + figure['urlpath'] + '?src=connect&figure=' + figureID);
+      output.push(' href="' + (generateRelativeUrl ? '' : URL_BASE) + figure['urlpath']);
       /*	
       if (inPage)
         output.push(' target="_self" href="javascript:selectFigure(\'' + figureID + '\', true)');
