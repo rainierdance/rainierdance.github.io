@@ -316,12 +316,15 @@ function getFigureLink(figureID, inPage) {
     if (figure['urlpath']) {
       output.push('<a class="' + styleClass + '" style="color:' + COLOR_MAP[figure['level']] + '"');
       output.push(' onclick="return onClickFigure(\'' + figureID + '\');" ');
+      output.push(' href="' + (generateRelativeUrl ? '' : URL_BASE) + figure['urlpath'] + '?src=connect&figure=' + figureID);
+      /*	
       if (inPage)
         output.push(' target="_self" href="javascript:selectFigure(\'' + figureID + '\', true)');
         //output.push(' target="_self" href="#section_' + figureID);
       else {
         output.push(' href="' + (generateRelativeUrl ? '' : URL_BASE) + figure['urlpath'] + '?src=connect&figure=' + figureID);
       }
+      */
       //output.push('?tmpl=/system/app/templates/print/');
       output.push('">' + name + '</a> ');
       if (IS_DEBUG == '1') {
