@@ -108,8 +108,7 @@ function initVars() {
   };
 
   isLatinDance = DANCE_MAP[inputDance]['type'] == 'latin';
-  URL_BASE = '/ballroom/international-style/' + DANCE_MAP[inputDance]['urlprefix'] + '/';    
-  //URL_BASE = 'http://www.dancecentral.info/ballroom/international-style/' + DANCE_MAP[inputDance]['urlprefix'] + '/';    
+  URL_BASE = 'http://www.dancecentral.info/ballroom/international-style/' + DANCE_MAP[inputDance]['urlprefix'] + '/';    
   figures = DANCE_MAP[inputDance]['figures'];
   selectedFigureName = inputFigureName; 
 
