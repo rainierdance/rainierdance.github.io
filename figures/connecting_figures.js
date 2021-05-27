@@ -22,7 +22,7 @@ var showComments = true;  // whether to show comments
 var showDiagram = true;  // whether to show diagram
 var showVideos = true; 
 
-var generateRelativeUrl = false;  // for figure links
+var generateRelativeUrl = true;  // for figure links
 
 var selectedFigureName = inputFigureName; // current selected figure name
 var routine = []; // array of RoutineStep objects
